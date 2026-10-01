@@ -1,0 +1,60 @@
+{
+ "mcpVersion": "1.0.0",
+  "name": "figma-blade-mcp-server",
+  "connection": {
+    "type": "figma",
+    "apiEndpoint": "https://api.figma.com/v1",
+    "accessTokenEnv": "FIGMA_PERSONAL_ACCESS_TOKEN",
+    "fileKeyEnv": "FIGMA_DESIGN_FILE_KEY",
+    "defaultFileKey": "CXxUbHl3oMzt9Bzv3SKv75",
+    "defaultNodeId": "3972:31252"
+  },
+  "mappingRules": {
+    "componentPrefix": "Blade",
+    "tokenPath": "src/tokens",
+    "componentsPath": "src/components",
+    "autoLayoutToFlex": true,
+    "propNameTransform": "camelCase",
+    "variantMappings": {
+      "Variant": "variant",
+      "Size": "size",
+      "State": "state",
+      "Disabled": "isDisabled",
+      "Loading": "isLoading",
+      "Full Width": "isFullWidth"
+    },
+    "tokenCategoryMappings": {
+      "COLOR": "colors",
+      "SPACING": "spacing",
+      "TYPOGRAPHY": "typography",
+      "BORDER_RADIUS": "borderRadii",
+      "ELEVATION": "shadows"
+    }
+  },
+  "components": [
+    {
+      "figmaComponentName": "Button",
+      "codeComponentName": "BladeButton",
+      "filePath": "src/components/Button/Button.tsx",
+      "typesPath": "src/components/Button/Button.types.ts"
+    },
+    {
+      "figmaComponentName": "Tooltip",
+      "codeComponentName": "BladeTooltip",
+      "filePath": "src/components/Tooltip/Tooltip.tsx",
+      "typesPath": "src/components/Tooltip/Tooltip.types.ts"
+    },
+    {
+      "figmaComponentName": "Switcher",
+      "codeComponentName": "BladeSwitcher",
+      "filePath": "src/components/Switcher/Switcher.tsx",
+      "typesPath": "src/components/Switcher/Switcher.types.ts"
+    },
+    {
+      "figmaComponentName": "TextBox",
+      "codeComponentName": "BladeTextBox",
+      "filePath": "src/components/TextBox/TextBox.tsx",
+      "typesPath": "src/components/TextBox/TextBox.types.ts"
+    }
+  ]
+}
