@@ -1,11 +1,10 @@
 export const colors = {
-  primary: '#0ea5a4',
-  primary700: '#089089',
-  secondary: '#6366f1',
-  danger: '#ef4444',
-  text: '#0f172a',
-  muted: '#6b7280',
-  white: '#ffffff',
-  surface: '#f8fafc',
-  bg: '#ffffff',
-}
+  primary: 'var(--primary)',
+  white: 'var(--white)',
+  text: 'var(--text)',
+  muted: 'var(--muted)',
+  secondary: 'var(--secondary)',
+  danger: 'var(--danger)',
+  bg: 'var(--bg)',
+  surface: 'var(--surface)',
+} as const;

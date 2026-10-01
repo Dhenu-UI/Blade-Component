@@ -3,7 +3,7 @@ import { Button } from './components/Button'
 export default function App() {
   return (
     <div className="container">
-      <h1>Blade Components Showcase</h1>
+      <h1>UI Components</h1>
 
       <section className="card">
         <h2>Button</h2>

@@ -9,3 +9,19 @@
         background-color: color-mix(in srgb, #{$color}, white #{$percentage});
     }
 }
+
+@mixin dark-mode {
+    [data-theme='dark'] & {
+        @content;
+    }
+
+    .dark & {
+        @content;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        :root:not([data-theme='light']) & {
+            @content;
+        }
+    }
+}
