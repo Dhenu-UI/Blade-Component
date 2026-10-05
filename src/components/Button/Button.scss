@@ -2,7 +2,6 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: var(--space-8);
     font-family: inherit;
     font-weight: 600;
     border: 1px solid transparent;
@@ -18,33 +17,17 @@
     }
 }
 
-/* Size Variants */
-.btn-small {
-    height: var(--space-32);
-    padding: 0 var(--space-12);
-    font-size: var(--font-14);
-    border-radius: var(--radius-sm);
-}
-
-.btn-medium {
-    height: var(--space-40);
-    padding: 0 var(--space-16);
-    font-size: var(--font-16);
-    border-radius: var(--radius-md);
-}
-
 .btn-large {
-    height: var(--space-48);
-    padding: 0 var(--space-20);
-    font-size: var(--font-18);
-    border-radius: var(--radius-xl);
+    height: var(--button-size-large-height);
+    padding: 0 var(--button-size-large-padding-x);
+    border-radius: var(--button-size-large-radius);
 }
 
 .btn-primary {
-  background-color: var(--primary);
-  color: var(--white);
-  
+    background: var(--button-primary-background-color-pressed);
+    color: var(--white);
 }
+
 .btn-primary:hover {
-  background-color: color-mix(in srgb, var(--primary), black 10%);
+    background-color: color-mix(in srgb, var(--button-primary-background-color-pressed), black 10%);
 }

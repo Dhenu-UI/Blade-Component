@@ -9,8 +9,6 @@ export default function App() {
         <h2>Button</h2>
         <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}>
           <Button variant="primary" size="large">Primary</Button>
-          <Button variant="primary" size="medium">Primary</Button>
-          <Button variant="primary" size="small">Primary</Button>
         </div>
       </section>
     </div>
