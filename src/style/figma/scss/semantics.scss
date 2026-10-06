@@ -1,896 +1,613 @@
-// 🤖 Auto-generated SCSS variables from semantics.tokens.json
-$page-subtle: #FFFFFF;
-$page-moderate: #F5F5F5;
-$text-subtle: #444444;
-$text-moderate: #2C2C2C;
-$text-strong: #111111;
-$text-inverse: var(--page-subtle);
-$text-disabled: #D9D9D9;
-$text-static: var(--page-subtle);
-$text-primary-subtle: #3B5CE1;
-$text-primary-moderate: #1C3FCA;
-$text-primary-strong: #1F30AD;
-$text-primary-disabled: #9CB4F7;
-$cards-neutral-subtle: var(--page-subtle);
-$cards-neutral-moderate: var(--page-moderate);
-$cards-neutral-strong: var(--text-disabled);
-$cards-primary-subtle: #F3F6FD;
-$cards-primary-moderate: var(--text-primary-disabled);
-$feedback-background-color-primary-subtle: var(--cards-primary-subtle);
-$feedback-background-color-primary-moderate: var(--text-primary-moderate);
-$feedback-background-color-neutral-subtle: var(--page-moderate);
-$feedback-background-color-neutral-default: #383838;
-$feedback-background-color-info-subtle: #EBFCFE;
-$feedback-background-color-info-moderate: #2A78C6;
-$feedback-background-color-success-subtle: #EFFAF2;
-$feedback-background-color-success-moderate: #00815A;
-$feedback-background-color-warning-subtle: #FEFAEC;
-$feedback-background-color-warning-moderate: #B65805;
-$feedback-background-color-error-subtle: #FDF1F4;
-$feedback-background-color-error-moderate: #D61C53;
-$feedback-background-color-violet-subtle: #F4F0FF;
-$feedback-background-color-violet-moderate: #7454F2;
-$feedback-background-color-purple-subtle: #FDEDFA;
-$feedback-background-color-purple-moderate: #A84AB8;
-$feedback-background-color-rust-subtle: #FDEFED;
-$feedback-background-color-rust-moderate: #A85C51;
-$feedback-background-color-yellow-subtle: #FDFAE7;
-$feedback-background-color-yellow-moderate: #F2B102;
-$feedback-border-color-primary-subtle: var(--border-primary-disabled);
-$feedback-border-color-primary-moderate: var(--text-primary-strong);
-$feedback-border-color-neutral-subtle: var(--text-disabled);
-$feedback-border-color-neutral-moderate: var(--feedback-background-color-neutral-default);
-$feedback-border-color-info-subtle: #B7EFFE;
-$feedback-border-color-info-moderate: #2974C1;
-$feedback-border-color-success-subtle: #ACE5C9;
-$feedback-border-color-success-moderate: #076246;
-$feedback-border-color-warning-subtle: #F7C599;
-$feedback-border-color-warning-moderate: #804006;
-$feedback-border-color-error-subtle: #F49BB3;
-$feedback-border-color-error-moderate: #A30F3B;
-$feedback-border-color-violet-subtle: #C7B9FF;
-$feedback-border-color-violet-moderate: #5236C9;
-$feedback-border-color-purple-subtle: #E6B5EE;
-$feedback-border-color-purple-moderate: #893399;
-$feedback-border-color-rust-subtle: #E7BCB6;
-$feedback-border-color-rust-moderate: #85463C;
-$feedback-border-color-yellow-subtle: #FFE8AC;
-$feedback-border-color-yellow-moderate: #8F6B00;
-$feedback-border-color-static-subtle: var(--page-subtle);
-$feedback-icon-color-primary-subtle: var(--text-primary-moderate);
-$feedback-icon-color-neutral-subtle: var(--feedback-background-color-neutral-default);
-$feedback-icon-color-info-subtle: var(--feedback-border-color-info-moderate);
-$feedback-icon-color-success-subtle: var(--feedback-border-color-success-moderate);
-$feedback-icon-color-warning-subtle: var(--feedback-border-color-warning-moderate);
-$feedback-icon-color-error-subtle: var(--feedback-border-color-error-moderate);
-$feedback-icon-color-violet-subtle: var(--feedback-border-color-violet-moderate);
-$feedback-icon-color-purple-subtle: var(--feedback-border-color-purple-moderate);
-$feedback-icon-color-rust-subtle: var(--feedback-border-color-rust-moderate);
-$feedback-icon-color-yellow-subtle: var(--feedback-border-color-yellow-moderate);
-$feedback-icon-color-static-subtle: var(--page-subtle);
-$feedback-icon-color-static-moderate: var(--feedback-background-color-neutral-default);
-$feedback-text-color-primary-subtle: var(--text-primary-disabled);
-$feedback-text-color-primary-moderate: var(--text-primary-moderate);
-$feedback-text-color-neutral-subtle: var(--feedback-background-color-neutral-default);
-$feedback-text-color-info-subtle: var(--feedback-border-color-info-moderate);
-$feedback-text-color-success-subtle: var(--feedback-border-color-success-moderate);
-$feedback-text-color-warning-subtle: var(--feedback-border-color-warning-moderate);
-$feedback-text-color-error-subtle: var(--feedback-border-color-error-moderate);
-$feedback-text-color-violet-subtle: var(--feedback-border-color-violet-moderate);
-$feedback-text-color-purple-subtle: var(--feedback-border-color-purple-moderate);
-$feedback-text-color-rust-subtle: var(--feedback-border-color-rust-moderate);
-$feedback-text-color-yellow-subtle: var(--feedback-border-color-yellow-moderate);
-$feedback-text-color-static-subtle: var(--page-subtle);
-$feedback-text-color-static-strong: var(--feedback-background-color-neutral-default);
-$icon-subtle: var(--text-subtle);
-$icon-moderate: var(--text-moderate);
-$icon-default: var(--text-strong);
-$icon-inverse: var(--page-subtle);
-$icon-disabled: var(--text-disabled);
-$icon-static: var(--page-subtle);
-$icon-primary-subtle: var(--text-primary-disabled);
-$icon-primary-default: var(--text-primary-moderate);
-$icon-primary-strong: #112266;
-$icon-success-subtle: var(--feedback-border-color-success-subtle);
-$icon-success-default: var(--feedback-background-color-success-moderate);
-$icon-success-strong: #11362A;
-$icon-warning-subtle: var(--feedback-border-color-warning-subtle);
-$icon-warning-default: var(--feedback-background-color-warning-moderate);
-$icon-warning-strong: #38210B;
-$icon-danger-subtle: var(--feedback-border-color-error-subtle);
-$icon-danger-default: var(--feedback-background-color-error-moderate);
-$icon-danger-strong: #3C1620;
-$icon-info-subtle: var(--feedback-border-color-info-subtle);
-$icon-info-default: var(--feedback-background-color-info-moderate);
-$icon-info-strong: #153A65;
-$icon-purple-subtle: var(--feedback-border-color-purple-subtle);
-$icon-purple-default: var(--feedback-background-color-purple-moderate);
-$icon-purple-strong: #581F63;
-$icon-rust-subtle: var(--feedback-border-color-rust-subtle);
-$icon-rust-default: var(--feedback-background-color-rust-moderate);
-$icon-rust-strong: #3D221E;
-$icon-yellow-subtle: var(--feedback-border-color-yellow-subtle);
-$icon-yellow-default: var(--feedback-background-color-yellow-moderate);
-$icon-yellow-strong: #533F04;
-$icon-violet-subtle: var(--feedback-border-color-violet-subtle);
-$icon-violet-default: var(--feedback-background-color-violet-moderate);
-$icon-violet-strong: #241950;
-$border-default: var(--text-disabled);
-$border-strong: var(--text-subtle);
-$border-inverse: var(--page-subtle);
-$border-static: var(--page-subtle);
-$border-focused: var(--border-primary-moderate);
-$border-disabled: var(--text-primary-disabled);
-$border-primary-subtle: var(--text-primary-subtle);
-$border-primary-moderate: var(--text-primary-moderate);
-$border-primary-default: var(--text-primary-moderate);
-$border-primary-strong: var(--text-primary-strong);
-$border-primary-disabled: var(--text-primary-disabled);
-$visual-icon-xs: 8px;
-$visual-icon-sm: 12px;
-$visual-icon-md: 16px;
-$visual-icon-lg: 20px;
-$visual-icon-xl: 24px;
-$visual-icon-2xl: 32px;
-$visual-icon-3xl: 40px;
-$visual-icon-stroke-2xs: 0.5px;
-$visual-icon-stroke-xs: 1px;
-$visual-icon-stroke-sm: 1.5px;
-$visual-icon-stroke-md: 2px;
-$visual-icon-stroke-lg: 2.5px;
-$visual-illustration-xs: 48px;
-$visual-illustration-sm: 64px;
-$visual-illustration-md: 80px;
-$visual-illustration-lg: 96px;
-$visual-illustration-xl: 120px;
-$visual-illustration-2xl: 140px;
-$visual-illustration-3xl: 160px;
-$visual-illustration-4xl: 200px;
-$visual-illustration-5xl: 240px;
-$visual-illustration-6xl: 280px;
-$visual-illustration-7xl: 320px;
-$visual-logo-xs: 8px;
-$visual-logo-sm: 12px;
-$visual-logo-md: 16px;
-$visual-logo-lg: 20px;
-$visual-logo-xl: 24px;
-$visual-logo-2xl: 32px;
-$visual-logo-3xl: 40px;
-$visual-logo-4xl: 48px;
-$control-checkbox-size-number: 0;
-$control-checkbox-size-small-height: 16px;
-$control-checkbox-size-small-padding: 2px;
-$control-checkbox-size-small-radius: 4px;
-$control-checkbox-size-medium-height: 20px;
-$control-checkbox-size-medium-radius: 4px;
-$control-checkbox-size-medium-padding: 4px;
-$control-checkbox-size-large-height: 24px;
-$control-checkbox-size-large-radius: 6px;
-$control-checkbox-size-large-padding: 4px;
-$control-radio-size-radius: 1440px;
-$control-radio-size-small-height: 16px;
-$control-radio-size-medium-height: 20px;
-$control-radio-size-large-height: 24px;
-$control-toggle-size-radius: 1440px;
-$control-toggle-size-small-track-width: 28px;
-$control-toggle-size-small-radius: 0;
-$control-toggle-size-small-padding-x: 2px;
-$control-toggle-size-small-padding-y: 2px;
-$control-toggle-size-small-focus-border-width: 1.5;
-$control-toggle-size-medium-track-width: 36px;
-$control-toggle-size-medium-radius: 0;
-$control-toggle-size-medium-padding-x: 2px;
-$control-toggle-size-medium-padding-y: 2px;
-$control-toggle-size-medium-focus-border-width: 2;
-$control-toggle-size-large-track-width: 44px;
-$control-toggle-size-large-radius: 0;
-$control-toggle-size-large-padding-x: 4px;
-$control-toggle-size-large-padding-y: 4px;
-$control-toggle-size-large-focus-border-width: 2.5;
-$control-background-color-default: var(--text-primary-moderate);
-$control-background-color-disabled: var(--page-moderate);
-$control-background-color-disabled-2: var(--text-disabled);
-$control-background-color-white: var(--page-subtle);
-$control-background-color-primary-disabled: var(--text-primary-disabled);
-$control-border-color-default: var(--border-primary-default);
-$control-border-color-primary: var(--border-default);
-$control-border-color-disabled: var(--border-default);
-$control-border-color-focus: var(--page-subtle);
-$control-border-color-primary-disabled: var(--text-primary-disabled);
-$control-icon-color-default: var(--page-subtle);
-$control-icon-color-disabled: var(--page-subtle);
-$control-icon-color-focus: var(--page-subtle);
-$forms-text-input-size-small-height: 52px;
-$forms-text-input-size-small-padding: 16px;
-$forms-text-input-size-small-icon-size: 20px;
-$forms-text-input-size-small-gap: 12px;
-$forms-text-input-size-small-radius: 12px;
-$forms-text-input-size-small-border-width: 1;
-$forms-text-input-size-small-focus-border-width: 2;
-$forms-text-input-size-medium-height: 64px;
-$forms-text-input-size-medium-padding: 20px;
-$forms-text-input-size-medium-icon-size: 20px;
-$forms-text-input-size-medium-gap: 12px;
-$forms-text-input-size-medium-radius: 12px;
-$forms-text-input-size-medium-border-width: 1;
-$forms-text-input-size-medium-focus-border-width: 2;
-$forms-text-area-size-small-height: 150px;
-$forms-text-area-size-small-padding: 16px;
-$forms-text-area-size-small-gap: 8px;
-$forms-text-area-size-small-radius: 12px;
-$forms-text-area-size-small-border-width: 1;
-$forms-text-area-size-small-focus-border-width: 2;
-$forms-text-area-size-medium-height: 200px;
-$forms-text-area-size-medium-padding: 20px;
-$forms-text-area-size-medium-gap: 12px;
-$forms-text-area-size-medium-radius: 12px;
-$forms-text-area-size-medium-border-width: 1;
-$forms-text-area-size-medium-focus-border-width: 2;
-$forms-mpin-size-small-height: 52px;
-$forms-mpin-size-small-padding: 16px;
-$forms-mpin-size-small-radius: 12px;
-$forms-mpin-size-small-border-width: 1;
-$forms-mpin-size-small-focus-border-width: 2;
-$forms-mpin-size-medium-height: 64px;
-$forms-mpin-size-medium-padding: 20px;
-$forms-mpin-size-medium-radius: 12px;
-$forms-mpin-size-medium-border-width: 1;
-$forms-mpin-size-medium-focus-border-width: 2;
-$forms-background-color-default: var(--page-subtle);
-$forms-background-color-disabled: var(--cards-primary-subtle);
-$forms-border-color-default: var(--text-disabled);
-$forms-border-color-focus: var(--border-primary-moderate);
-$forms-border-color-error: var(--feedback-border-color-error-subtle);
-$forms-border-color-success: var(--feedback-border-color-success-subtle);
-$forms-text-color-placeholder: var(--text-subtle);
-$forms-text-color-input: var(--text-strong);
-$forms-text-color-active: var(--text-primary-moderate);
-$forms-text-color-error: var(--feedback-text-color-error-subtle);
-$forms-text-color-success: var(--feedback-text-color-success-subtle);
-$forms-text-color-disabled: var(--text-disabled);
-$forms-icon-color-default: var(--icon-default);
-$forms-icon-color-subtle: var(--icon-subtle);
-$forms-icon-color-disabled: var(--icon-disabled);
-$forms-icon-color-disabled-brand: #5C6172;
-$button-focus-border-width: 2;
-$button-focus-white: var(--border-static);
-$button-size-border-width: 1;
-$button-size-internal-padding: 4px;
-$button-size-icon-style: flatten;
-$button-size-xsmall-height: 28px;
-$button-size-xsmall-gap: 2px;
-$button-size-xsmall-radius: 8px;
-$button-size-xsmall-padding-x: 8px;
-$button-size-xsmall-icon-size: 16px;
-$button-size-xsmall-padding-icon-button: 8px;
-$button-size-small-height: 36px;
-$button-size-small-gap: 2px;
-$button-size-small-radius: 8px;
-$button-size-small-padding-x: 12px;
-$button-size-small-icon-size: 16px;
-$button-size-medium-height: 40px;
-$button-size-medium-gap: 4px;
-$button-size-medium-radius: 12px;
-$button-size-medium-padding-x: 16px;
-$button-size-medium-icon-size: 20px;
-$button-size-large-height: 48px;
-$button-size-large-gap: 4px;
-$button-size-large-radius: 12px;
-$button-size-large-padding-x: 20px;
-$button-size-large-icon-size: 20px;
-$button-primary-background-color-default: var(--text-primary-moderate);
-$button-primary-background-color-hover: var(--text-primary-subtle);
-$button-primary-background-color-pressed: var(--text-primary-strong);
-$button-primary-background-color-disabled: var(--text-primary-disabled);
-$button-primary-foreground-color-static: var(--page-subtle);
-$button-primary-foreground-color-disabled: var(--cards-primary-subtle);
-$button-secondary-background-color-default: var(--page-subtle);
-$button-secondary-background-color-hover: var(--cards-primary-subtle);
-$button-secondary-background-color-pressed: #E1E9FE;
-$button-secondary-background-color-disabled: var(--page-subtle);
-$button-secondary-foreground-color-default: var(--text-primary-moderate);
-$button-secondary-foreground-color-hover: var(--text-primary-moderate);
-$button-secondary-foreground-color-pressed: var(--text-primary-strong);
-$button-secondary-foreground-color-disabled: var(--text-primary-disabled);
-$button-tertiary-background-color-default: var(--page-subtle);
-$button-tertiary-background-color-hover: var(--cards-primary-subtle);
-$button-tertiary-background-color-pressed: var(--button-secondary-background-color-pressed);
-$button-tertiary-background-color-disabled: var(--page-subtle);
-$button-tertiary-foreground-color-default: var(--text-primary-moderate);
-$button-tertiary-foreground-color-hover: var(--text-primary-moderate);
-$button-tertiary-foreground-color-pressed: var(--text-primary-strong);
-$button-tertiary-foreground-color-disabled: var(--text-primary-disabled);
-$button-link-foreground-color-default: var(--text-primary-moderate);
-$button-link-foreground-color-hover: var(--text-primary-moderate);
-$button-link-foreground-color-pressed: var(--text-primary-strong);
-$button-link-foreground-color-disabled: var(--text-primary-disabled);
-$button-white-primary-background-color-default: var(--page-subtle);
-$button-white-primary-background-color-hover: var(--page-subtle);
-$button-white-primary-background-color-pressed: var(--page-subtle);
-$button-white-primary-background-color-disabled: var(--page-subtle);
-$button-white-primary-foreground-color-default: var(--text-primary-moderate);
-$button-white-primary-foreground-color-hover: var(--text-primary-moderate);
-$button-white-primary-foreground-color-pressed: var(--text-primary-moderate);
-$button-white-primary-foreground-color-disabled: var(--text-primary-disabled);
-$button-white-secondary-background-color-default: var(--page-subtle);
-$button-white-secondary-background-color-hover: var(--page-subtle);
-$button-white-secondary-background-color-pressed: var(--page-subtle);
-$button-white-secondary-background-color-disabled: var(--page-subtle);
-$button-white-secondary-foreground-color-default: var(--page-subtle);
-$button-white-secondary-foreground-color-hover: var(--page-subtle);
-$button-white-secondary-foreground-color-pressed: var(--page-subtle);
-$button-white-secondary-foreground-color-disabled: var(--page-subtle);
-$button-white-tertiary-background-color-default: var(--page-subtle);
-$button-white-tertiary-background-color-hover: var(--page-subtle);
-$button-white-tertiary-background-color-pressed: var(--page-subtle);
-$button-white-tertiary-background-color-disabled: var(--page-subtle);
-$button-white-tertiary-foreground-color-default: var(--page-subtle);
-$button-white-tertiary-foreground-color-hover: var(--page-subtle);
-$button-white-tertiary-foreground-color-pressed: var(--page-subtle);
-$button-white-tertiary-foreground-color-disabled: var(--page-subtle);
-$button-white-link-foreground-color-default: var(--page-subtle);
-$button-white-link-foreground-color-hover: var(--page-subtle);
-$button-white-link-foreground-color-pressed: var(--page-subtle);
-$button-white-link-foreground-color-disabled: var(--page-subtle);
-$chips-size-border-width: 1;
-$chips-size-small-height: 20px;
-$chips-size-small-gap: 4px;
-$chips-size-small-padding-x: 6px;
-$chips-size-small-padding-y: 2px;
-$chips-size-small-icon-size: 16px;
-$chips-size-small-radius-default: 8px;
-$chips-size-small-radius-round: 1440px;
-$chips-size-medium-height: 24px;
-$chips-size-medium-gap: 4px;
-$chips-size-medium-padding-x: 8px;
-$chips-size-medium-padding-y: 4px;
-$chips-size-medium-icon-size: 20px;
-$chips-size-medium-radius-default: 8px;
-$chips-size-medium-radius-round: 1440px;
-$chips-size-large-height: 32px;
-$chips-size-large-gap: 4px;
-$chips-size-large-padding-x: 12px;
-$chips-size-large-padding-y: 8px;
-$chips-size-large-icon-size: 20px;
-$chips-size-large-radius-default: 12px;
-$chips-size-large-radius-round: 1440px;
-$chips-primary-background-color-default: var(--text-primary-moderate);
-$chips-primary-background-color-hover: var(--text-primary-subtle);
-$chips-primary-background-color-pressed: var(--text-primary-strong);
-$chips-primary-background-color-disabled: var(--text-primary-disabled);
-$chips-primary-foreground-color-default: var(--page-subtle);
-$chips-primary-foreground-color-disabled: var(--cards-primary-subtle);
-$chips-accent-background-color-default: var(--feedback-background-color-primary-subtle);
-$chips-accent-background-color-hover: var(--text-primary-moderate);
-$chips-accent-background-color-pressed: var(--text-primary-moderate);
-$chips-accent-background-color-disabled: var(--cards-primary-subtle);
-$chips-accent-foreground-color-default: var(--text-primary-moderate);
-$chips-accent-foreground-color-disabled: var(--text-primary-disabled);
-$chips-outline-background-color-default: var(--feedback-background-color-primary-subtle);
-$chips-outline-background-color-hover: var(--text-primary-moderate);
-$chips-outline-background-color-pressed: var(--text-primary-moderate);
-$chips-outline-background-color-disabled: var(--cards-primary-subtle);
-$chips-outline-foreground-color-default: var(--text-primary-moderate);
-$chips-outline-foreground-color-hover: var(--text-primary-disabled);
-$chips-outline-foreground-color-disabled: var(--text-primary-disabled);
-$badge-size-small-height: 24px;
-$badge-size-small-gap: 4px;
-$badge-size-small-horizontal-padding: 8px;
-$badge-size-small-vertical-padding: 4px;
-$badge-size-small-radius: 8px;
-$badge-size-medium-height: 28px;
-$badge-size-medium-gap: 4px;
-$badge-size-medium-horizontal-padding: 8px;
-$badge-size-medium-vertical-padding: 4px;
-$badge-size-medium-radius: 8px;
-$badge-size-large-height: 36px;
-$badge-size-large-gap: 4px;
-$badge-size-large-horizontal-padding: 12px;
-$badge-size-large-vertical-padding: 8px;
-$badge-size-large-radius: 12px;
-$badge-type-primary: var(--page-subtle);
-$badge-type-neutral: var(--page-subtle);
-$seperator-default: var(--text-disabled);
-$seperator-subtle: var(--text-subtle);
-$seperator-strong: var(--text-strong);
-$seperator-border-width: 1;
-$bottomsheet-default: var(--text-disabled);
-$bottomsheet-subtle: var(--text-subtle);
-$bottomsheet-strong: var(--text-strong);
-$popover-default: var(--text-disabled);
-$popover-subtle: var(--text-subtle);
-$popover-strong: var(--text-strong);
-$tabs-vertical-padding: 16px;
-$tabs-horizontal-padding: 12px;
-$tabs-horizontal-gap: 4px;
-$tabs-vertical-gap: 16px;
-$tabs-focus-ring: var(--page-subtle);
-$tabs-active-indicator: var(--text-primary-moderate);
-$pagination-horizontal-padding: 4px;
-$pagination-horizontal-gap: 4px;
-$pagination-horizontal-gap-2: 12px;
-$pagination-focus: var(--text-primary-moderate);
-$pagination-action-default: var(--icon-default);
-$pagination-action-hover: var(--icon-subtle);
-$pagination-action-pressed: var(--icon-moderate);
-$pagination-action-disabled: var(--icon-disabled);
-$pagination-base-selected-default: var(--text-primary-moderate);
-$pagination-base-selected-hover: var(--text-primary-subtle);
-$pagination-base-selected-pressed: var(--text-primary-strong);
-$pagination-base-deselected-default: var(--page-subtle);
-$pagination-base-deselected-hover: var(--cards-primary-subtle);
-$pagination-base-deselected-pressed: var(--button-secondary-background-color-pressed);
-$progress-bar-radius: 1440px;
-$progress-bar-linear-height: 8px;
-$progress-bar-circular-small-height: 40px;
-$progress-bar-circular-medium-height: 68px;
-$avatar-border-radius: 1440;
-$avatar-status-padding: 4px;
-$avatar-size-xxxlarge: 72px;
-$avatar-size-xxlarge: 64px;
-$avatar-size-xlarge: 56px;
-$avatar-size-large: 48px;
-$avatar-size-medium: 40px;
-$avatar-size-small: 32px;
-$avatar-size-xsmall: 24px;
-$avatar-size-status: 24px;
-$toast-border-radius: 8;
-$toast-padding-x: 12px;
-$toast-padding-y: 8px;
-$toast-height: 36px;
-$ratings-height: 24px;
-$snackbar-size-padding-x-single-line: 12px;
-$snackbar-size-padding-y-single-line: 4px;
-$snackbar-size-padding-x: 16px;
-$snackbar-size-padding-y: 12px;
-$snackbar-size-gap: 8px;
-$snackbar-size-radius: 8px;
+@use 'sass:string';
+@use './primitives' as *;
+
+// ==========================================
+// SEMANTIC TOKENS MAP
+// ==========================================
+$semantic-tokens: (
+  // ----------------------------------------
+  // Page & Text Tokens
+  // ----------------------------------------
+  "page-subtle": var(--global-colors-basic-white),
+  "page-moderate": var(--global-colors-grey-50),
+
+  "text-subtle": var(--global-colors-grey-500),
+  "text-moderate": var(--global-colors-grey-700),
+  "text-strong": var(--global-colors-grey-900),
+  "text-inverse": var(--page-subtle),
+  "text-disabled": var(--global-colors-grey-200),
+  "text-static": var(--page-subtle),
+
+  "text-primary-subtle": var(--global-colors-blue-400),
+  "text-primary-moderate": var(--global-colors-blue-500),
+  "text-primary-strong": var(--global-colors-blue-600),
+  "text-primary-disabled": var(--global-colors-blue-200),
+
+  // ----------------------------------------
+  // Cards Tokens
+  // ----------------------------------------
+  "cards-neutral-subtle": var(--page-subtle),
+  "cards-neutral-moderate": var(--page-moderate),
+  "cards-neutral-strong": var(--text-disabled),
+
+  "cards-primary-subtle": var(--global-colors-blue-50),
+  "cards-primary-moderate": var(--text-primary-disabled),
+
+  // ----------------------------------------
+  // Feedback Background Colors
+  // ----------------------------------------
+  "feedback-background-color-primary-subtle": var(--cards-primary-subtle),
+  "feedback-background-color-primary-moderate": var(--text-primary-moderate),
+  "feedback-background-color-neutral-subtle": var(--page-moderate),
+  "feedback-background-color-neutral-default": var(--global-colors-grey-600),
+  "feedback-background-color-info-subtle": var(--global-colors-light-blue-50),
+  "feedback-background-color-info-moderate": var(--global-colors-light-blue-500),
+  "feedback-background-color-success-subtle": var(--global-colors-green-50),
+  "feedback-background-color-success-moderate": var(--global-colors-green-500),
+  "feedback-background-color-warning-subtle": var(--global-colors-orange-50),
+  "feedback-background-color-warning-moderate": var(--global-colors-orange-500),
+  "feedback-background-color-error-subtle": var(--global-colors-red-50),
+  "feedback-background-color-error-moderate": var(--global-colors-red-500),
+  "feedback-background-color-violet-subtle": var(--global-colors-violet-50),
+  "feedback-background-color-violet-moderate": var(--global-colors-violet-500),
+  "feedback-background-color-purple-subtle": var(--global-colors-purple-50),
+  "feedback-background-color-purple-moderate": var(--global-colors-purple-500),
+  "feedback-background-color-rust-subtle": var(--global-colors-brown-50),
+  "feedback-background-color-rust-moderate": var(--global-colors-brown-500),
+  "feedback-background-color-yellow-subtle": var(--global-colors-yellow-50),
+  "feedback-background-color-yellow-moderate": var(--global-colors-yellow-500),
+
+  // ----------------------------------------
+  // Feedback Border Colors
+  // ----------------------------------------
+  "feedback-border-color-primary-subtle": var(--border-primary-disabled),
+  "feedback-border-color-primary-moderate": var(--text-primary-strong),
+  "feedback-border-color-neutral-subtle": var(--text-disabled),
+  "feedback-border-color-neutral-moderate": var(--feedback-background-color-neutral-default),
+  "feedback-border-color-info-subtle": var(--global-colors-light-blue-200),
+  "feedback-border-color-info-moderate": var(--global-colors-light-blue-600),
+  "feedback-border-color-success-subtle": var(--global-colors-green-200),
+  "feedback-border-color-success-moderate": var(--global-colors-green-600),
+  "feedback-border-color-warning-subtle": var(--global-colors-orange-200),
+  "feedback-border-color-warning-moderate": var(--global-colors-orange-600),
+  "feedback-border-color-error-subtle": var(--global-colors-red-200),
+  "feedback-border-color-error-moderate": var(--global-colors-red-600),
+  "feedback-border-color-violet-subtle": var(--global-colors-violet-200),
+  "feedback-border-color-violet-moderate": var(--global-colors-violet-600),
+  "feedback-border-color-purple-subtle": var(--global-colors-purple-200),
+  "feedback-border-color-purple-moderate": var(--global-colors-purple-600),
+  "feedback-border-color-rust-subtle": var(--global-colors-brown-200),
+  "feedback-border-color-rust-moderate": var(--global-colors-brown-600),
+  "feedback-border-color-yellow-subtle": var(--global-colors-yellow-200),
+  "feedback-border-color-yellow-moderate": var(--global-colors-yellow-700),
+  "feedback-border-color-static-subtle": var(--page-subtle),
+
+  // ----------------------------------------
+  // Feedback Icon Colors
+  // ----------------------------------------
+  "feedback-icon-color-primary-subtle": var(--text-primary-moderate),
+  "feedback-icon-color-neutral-subtle": var(--feedback-background-color-neutral-default),
+  "feedback-icon-color-info-subtle": var(--feedback-border-color-info-moderate),
+  "feedback-icon-color-success-subtle": var(--feedback-border-color-success-moderate),
+  "feedback-icon-color-warning-subtle": var(--feedback-border-color-warning-moderate),
+  "feedback-icon-color-error-subtle": var(--feedback-border-color-error-moderate),
+  "feedback-icon-color-violet-subtle": var(--feedback-border-color-violet-moderate),
+  "feedback-icon-color-purple-subtle": var(--feedback-border-color-purple-moderate),
+  "feedback-icon-color-rust-subtle": var(--feedback-border-color-rust-moderate),
+  "feedback-icon-color-yellow-subtle": var(--feedback-border-color-yellow-moderate),
+  "feedback-icon-color-static-subtle": var(--page-subtle),
+  "feedback-icon-color-static-moderate": var(--feedback-background-color-neutral-default),
+
+  // ----------------------------------------
+  // Feedback Text Colors
+  // ----------------------------------------
+  "feedback-text-color-primary-subtle": var(--text-primary-disabled),
+  "feedback-text-color-primary-moderate": var(--text-primary-moderate),
+  "feedback-text-color-neutral-subtle": var(--feedback-background-color-neutral-default),
+  "feedback-text-color-info-subtle": var(--feedback-border-color-info-moderate),
+  "feedback-text-color-success-subtle": var(--feedback-border-color-success-moderate),
+  "feedback-text-color-warning-subtle": var(--feedback-border-color-warning-moderate),
+  "feedback-text-color-error-subtle": var(--feedback-border-color-error-moderate),
+  "feedback-text-color-violet-subtle": var(--feedback-border-color-violet-moderate),
+  "feedback-text-color-purple-subtle": var(--feedback-border-color-purple-moderate),
+  "feedback-text-color-rust-subtle": var(--feedback-border-color-rust-moderate),
+  "feedback-text-color-yellow-subtle": var(--feedback-border-color-yellow-moderate),
+  "feedback-text-color-static-subtle": var(--page-subtle),
+  "feedback-text-color-static-strong": var(--feedback-background-color-neutral-default),
+
+  // ----------------------------------------
+  // Standard Icon Tokens
+  // ----------------------------------------
+  "icon-subtle": var(--text-subtle),
+  "icon-moderate": var(--text-moderate),
+  "icon-default": var(--text-strong),
+  "icon-inverse": var(--page-subtle),
+  "icon-disabled": var(--text-disabled),
+  "icon-static": var(--page-subtle),
+
+  "icon-primary-subtle": var(--text-primary-disabled),
+  "icon-primary-default": var(--text-primary-moderate),
+  "icon-primary-strong": var(--global-colors-blue-700),
+
+  "icon-success-subtle": var(--feedback-border-color-success-subtle),
+  "icon-success-default": var(--feedback-background-color-success-moderate),
+  "icon-success-strong": var(--global-colors-green-800),
+
+  "icon-warning-subtle": var(--feedback-border-color-warning-subtle),
+  "icon-warning-default": var(--feedback-background-color-warning-moderate),
+  "icon-warning-strong": var(--global-colors-orange-800),
+
+  "icon-danger-subtle": var(--feedback-border-color-error-subtle),
+  "icon-danger-default": var(--feedback-background-color-error-moderate),
+  "icon-danger-strong": var(--global-colors-red-800),
+
+  "icon-info-subtle": var(--feedback-border-color-info-subtle),
+  "icon-info-default": var(--feedback-background-color-info-moderate),
+  "icon-info-strong": var(--global-colors-light-blue-800),
+
+  "icon-purple-subtle": var(--feedback-border-color-purple-subtle),
+  "icon-purple-default": var(--feedback-background-color-purple-moderate),
+  "icon-purple-strong": var(--global-colors-purple-700),
+
+  "icon-rust-subtle": var(--feedback-border-color-rust-subtle),
+  "icon-rust-default": var(--feedback-background-color-rust-moderate),
+  "icon-rust-strong": var(--global-colors-brown-800),
+
+  "icon-yellow-subtle": var(--feedback-border-color-yellow-subtle),
+  "icon-yellow-default": var(--feedback-background-color-yellow-moderate),
+  "icon-yellow-strong": var(--global-colors-yellow-800),
+
+  "icon-violet-subtle": var(--feedback-border-color-violet-subtle),
+  "icon-violet-default": var(--feedback-background-color-violet-moderate),
+  "icon-violet-strong": var(--global-colors-violet-800),
+
+  // ----------------------------------------
+  // Border Tokens
+  // ----------------------------------------
+  "border-default": var(--text-disabled),
+  "border-strong": var(--text-subtle),
+  "border-inverse": var(--page-subtle),
+  "border-static": var(--page-subtle),
+  "border-focused": var(--border-primary-moderate),
+  "border-disabled": var(--text-primary-disabled),
+
+  "border-primary-subtle": var(--text-primary-subtle),
+  "border-primary-moderate": var(--text-primary-moderate),
+  "border-primary-default": var(--text-primary-moderate),
+  "border-primary-strong": var(--text-primary-strong),
+  "border-primary-disabled": var(--text-primary-disabled),
+
+  // ----------------------------------------
+  // Visual Icons, Illustrations & Logos
+  // ----------------------------------------
+  "visual-icon-xs": 8,
+  "visual-icon-sm": 12,
+  "visual-icon-md": 16,
+  "visual-icon-lg": 20,
+  "visual-icon-xl": 24,
+  "visual-icon-2xl": 32,
+  "visual-icon-3xl": 40,
+
+  "visual-icon-stroke-2xs": 0.5,
+  "visual-icon-stroke-xs": 1,
+  "visual-icon-stroke-sm": 1.5,
+  "visual-icon-stroke-md": 2,
+  "visual-icon-stroke-lg": 2.5,
+
+  "visual-illustration-xs": 48,
+  "visual-illustration-sm": 64,
+  "visual-illustration-md": 80,
+  "visual-illustration-lg": 96,
+  "visual-illustration-xl": 120,
+  "visual-illustration-2xl": 140,
+  "visual-illustration-3xl": 160,
+  "visual-illustration-4xl": 200,
+  "visual-illustration-5xl": 240,
+  "visual-illustration-6xl": 280,
+  "visual-illustration-7xl": 320,
+
+  "visual-logo-xs": 8,
+  "visual-logo-sm": 12,
+  "visual-logo-md": 16,
+  "visual-logo-lg": 20,
+  "visual-logo-xl": 24,
+  "visual-logo-2xl": 32,
+  "visual-logo-3xl": 40,
+  "visual-logo-4xl": 48,
+
+  // ----------------------------------------
+  // Controls (Checkbox, Radio, Toggle)
+  // ----------------------------------------
+  "control-checkbox-size-number": 0px,
+  "control-checkbox-size-small-height": 16px,
+  "control-checkbox-size-small-padding": 2px,
+  "control-checkbox-size-small-radius": 4px,
+  "control-checkbox-size-medium-height": 20px,
+  "control-checkbox-size-medium-radius": 4px,
+  "control-checkbox-size-medium-padding": 4px,
+  "control-checkbox-size-large-height": 24px,
+  "control-checkbox-size-large-radius": 6px,
+  "control-checkbox-size-large-padding": 4px,
+
+  "control-radio-size-radius": 1440px,
+  "control-radio-size-small-height": 16px,
+  "control-radio-size-medium-height": 20px,
+  "control-radio-size-large-height": 24px,
+
+  "control-toggle-size-radius": 1440px,
+  "control-toggle-size-small-track-width": 28px,
+  "control-toggle-size-small-radius": 0px,
+  "control-toggle-size-small-padding-x": 2px,
+  "control-toggle-size-small-padding-y": 2px,
+  "control-toggle-size-small-focus-border-width": 1.5px,
+
+  "control-toggle-size-medium-track-width": 36px,
+  "control-toggle-size-medium-radius": 0px,
+  "control-toggle-size-medium-padding-x": 2px,
+  "control-toggle-size-medium-padding-y": 2px,
+  "control-toggle-size-medium-focus-border-width": 2px,
+
+  "control-toggle-size-large-track-width": 44px,
+  "control-toggle-size-large-radius": 0px,
+  "control-toggle-size-large-padding-x": 4px,
+  "control-toggle-size-large-padding-y": 4px,
+  "control-toggle-size-large-focus-border-width": 2.5px,
+
+  "control-background-color-default": var(--text-primary-moderate),
+  "control-background-color-disabled": var(--page-moderate),
+  "control-background-color-disabled-2": var(--text-disabled),
+  "control-background-color-white": var(--page-subtle),
+  "control-background-color-primary-disabled": var(--text-primary-disabled),
+
+  "control-border-color-default": var(--border-primary-default),
+  "control-border-color-primary": var(--border-default),
+  "control-border-color-disabled": var(--border-default),
+  "control-border-color-focus": var(--page-subtle),
+  "control-border-color-primary-disabled": var(--text-primary-disabled),
+
+  "control-icon-color-default": var(--page-subtle),
+  "control-icon-color-disabled": var(--page-subtle),
+  "control-icon-color-focus": var(--page-subtle),
+
+  // ----------------------------------------
+  // Forms (Input, TextArea, MPIN)
+  // ----------------------------------------
+  "forms-text-input-size-small-height": var(--global-scale-650),
+  "forms-text-input-size-small-padding": var(--global-scale-200),
+  "forms-text-input-size-small-icon-size": var(--global-scale-250),
+  "forms-text-input-size-small-gap": var(--global-scale-150),
+  "forms-text-input-size-small-radius": var(--global-scale-150),
+  "forms-text-input-size-small-border-width": 1px,
+  "forms-text-input-size-small-focus-border-width": 2px,
+
+  "forms-text-input-size-medium-height": var(--global-scale-800),
+  "forms-text-input-size-medium-padding": var(--global-scale-250),
+  "forms-text-input-size-medium-icon-size": var(--global-scale-250),
+  "forms-text-input-size-medium-gap": var(--global-scale-150),
+  "forms-text-input-size-medium-radius": var(--global-scale-150),
+  "forms-text-input-size-medium-border-width": 1px,
+  "forms-text-input-size-medium-focus-border-width": 2px,
+
+  "forms-text-area-size-small-height": 150px,
+  "forms-text-area-size-small-padding": var(--global-scale-200),
+  "forms-text-area-size-small-gap": var(--global-scale-100),
+  "forms-text-area-size-small-radius": var(--global-scale-150),
+  "forms-text-area-size-small-border-width": 1px,
+  "forms-text-area-size-small-focus-border-width": 2px,
+
+  "forms-text-area-size-medium-height": 200px,
+  "forms-text-area-size-medium-padding": var(--global-scale-250),
+  "forms-text-area-size-medium-gap": var(--global-scale-150),
+  "forms-text-area-size-medium-radius": var(--global-scale-150),
+  "forms-text-area-size-medium-border-width": 1px,
+  "forms-text-area-size-medium-focus-border-width": 2px,
+
+  "forms-mpin-size-small-height": var(--global-scale-650),
+  "forms-mpin-size-small-padding": var(--global-scale-200),
+  "forms-mpin-size-small-radius": var(--global-scale-150),
+  "forms-mpin-size-small-border-width": 1px,
+  "forms-mpin-size-small-focus-border-width": 2px,
+
+  "forms-mpin-size-medium-height": var(--global-scale-800),
+  "forms-mpin-size-medium-padding": var(--global-scale-250),
+  "forms-mpin-size-medium-radius": var(--global-scale-150),
+  "forms-mpin-size-medium-border-width": 1px,
+  "forms-mpin-size-medium-focus-border-width": 2px,
+
+  "forms-background-color-default": var(--page-subtle),
+  "forms-background-color-disabled": var(--cards-primary-subtle),
+
+  "forms-border-color-default": var(--text-disabled),
+  "forms-border-color-focus": var(--border-primary-moderate),
+  "forms-border-color-error": var(--feedback-border-color-error-subtle),
+  "forms-border-color-success": var(--feedback-border-color-success-subtle),
+
+  "forms-text-color-placeholder": var(--text-subtle),
+  "forms-text-color-input": var(--text-strong),
+  "forms-text-color-active": var(--text-primary-moderate),
+  "forms-text-color-error": var(--feedback-text-color-error-subtle),
+  "forms-text-color-success": var(--feedback-text-color-success-subtle),
+  "forms-text-color-disabled": var(--text-disabled),
+
+  "forms-icon-color-default": var(--icon-default),
+  "forms-icon-color-subtle": var(--icon-subtle),
+  "forms-icon-color-disabled": var(--icon-disabled),
+  "forms-icon-color-disabled-brand": var(--global-colors-slate-500),
+
+  // ----------------------------------------
+  // Buttons
+  // ----------------------------------------
+  "button-focus-border-width": 2px,
+  "button-focus-white": var(--border-static),
+  "button-size-border-width": 1px,
+  "button-size-internal-padding": var(--global-scale-50),
+  "button-size-icon-style": flatten,
+
+  "button-size-xsmall-height": var(--global-scale-350),
+  "button-size-xsmall-gap": var(--global-scale-25),
+  "button-size-xsmall-radius": var(--global-scale-100),
+  "button-size-xsmall-padding-x": var(--global-scale-100),
+  "button-size-xsmall-icon-size": var(--global-scale-200),
+  "button-size-xsmall-padding-icon-button": var(--global-scale-100),
+
+  "button-size-small-height": var(--global-scale-450),
+  "button-size-small-gap": var(--global-scale-25),
+  "button-size-small-radius": var(--global-scale-100),
+  "button-size-small-padding-x": var(--global-scale-150),
+  "button-size-small-icon-size": var(--global-scale-200),
+
+  "button-size-medium-height": var(--global-scale-500),
+  "button-size-medium-gap": var(--global-scale-50),
+  "button-size-medium-radius": var(--global-scale-150),
+  "button-size-medium-padding-x": var(--global-scale-200),
+  "button-size-medium-icon-size": var(--global-scale-250),
+
+  "button-size-large-height": var(--global-scale-600),
+  "button-size-large-gap": var(--global-scale-50),
+  "button-size-large-radius": var(--global-scale-150),
+  "button-size-large-padding-x": var(--global-scale-250),
+  "button-size-large-icon-size": var(--global-scale-250),
+
+  // Primary Button
+  "button-primary-background-color-default": var(--text-primary-moderate),
+  "button-primary-background-color-hover": var(--text-primary-subtle),
+  "button-primary-background-color-pressed": var(--text-primary-strong),
+  "button-primary-background-color-disabled": var(--text-primary-disabled),
+  "button-primary-foreground-color-static": var(--page-subtle),
+  "button-primary-foreground-color-disabled": var(--cards-primary-subtle),
+
+  // Secondary Button
+  "button-secondary-background-color-default": var(--page-subtle),
+  "button-secondary-background-color-hover": var(--cards-primary-subtle),
+  "button-secondary-background-color-pressed": var(--global-colors-blue-100),
+  "button-secondary-background-color-disabled": var(--page-subtle),
+  "button-secondary-foreground-color-default": var(--text-primary-moderate),
+  "button-secondary-foreground-color-hover": var(--text-primary-moderate),
+  "button-secondary-foreground-color-pressed": var(--text-primary-strong),
+  "button-secondary-foreground-color-disabled": var(--text-primary-disabled),
+
+  // Tertiary Button
+  "button-tertiary-background-color-default": var(--page-subtle),
+  "button-tertiary-background-color-hover": var(--cards-primary-subtle),
+  "button-tertiary-background-color-pressed": var(--button-secondary-background-color-pressed),
+  "button-tertiary-background-color-disabled": var(--page-subtle),
+  "button-tertiary-foreground-color-default": var(--text-primary-moderate),
+  "button-tertiary-foreground-color-hover": var(--text-primary-moderate),
+  "button-tertiary-foreground-color-pressed": var(--text-primary-strong),
+  "button-tertiary-foreground-color-disabled": var(--text-primary-disabled),
+
+  // Link Button
+  "button-link-foreground-color-default": var(--text-primary-moderate),
+  "button-link-foreground-color-hover": var(--text-primary-moderate),
+  "button-link-foreground-color-pressed": var(--text-primary-strong),
+  "button-link-foreground-color-disabled": var(--text-primary-disabled),
+
+  // White Button Variations
+  "button-white-primary-background-color-default": var(--page-subtle),
+  "button-white-primary-background-color-hover": var(--page-subtle),
+  "button-white-primary-background-color-pressed": var(--page-subtle),
+  "button-white-primary-background-color-disabled": var(--page-subtle),
+  "button-white-primary-foreground-color-default": var(--text-primary-moderate),
+  "button-white-primary-foreground-color-hover": var(--text-primary-moderate),
+  "button-white-primary-foreground-color-pressed": var(--text-primary-moderate),
+  "button-white-primary-foreground-color-disabled": var(--text-primary-disabled),
+
+  "button-white-secondary-background-color-default": var(--page-subtle),
+  "button-white-secondary-background-color-hover": var(--page-subtle),
+  "button-white-secondary-background-color-pressed": var(--page-subtle),
+  "button-white-secondary-background-color-disabled": var(--page-subtle),
+  "button-white-secondary-foreground-color-default": var(--page-subtle),
+  "button-white-secondary-foreground-color-hover": var(--page-subtle),
+  "button-white-secondary-foreground-color-pressed": var(--page-subtle),
+  "button-white-secondary-foreground-color-disabled": var(--page-subtle),
+
+  "button-white-tertiary-background-color-default": var(--page-subtle),
+  "button-white-tertiary-background-color-hover": var(--page-subtle),
+  "button-white-tertiary-background-color-pressed": var(--page-subtle),
+  "button-white-tertiary-background-color-disabled": var(--page-subtle),
+  "button-white-tertiary-foreground-color-default": var(--page-subtle),
+  "button-white-tertiary-foreground-color-hover": var(--page-subtle),
+  "button-white-tertiary-foreground-color-pressed": var(--page-subtle),
+  "button-white-tertiary-foreground-color-disabled": var(--page-subtle),
+
+  "button-white-link-foreground-color-default": var(--page-subtle),
+  "button-white-link-foreground-color-hover": var(--page-subtle),
+  "button-white-link-foreground-color-pressed": var(--page-subtle),
+  "button-white-link-foreground-color-disabled": var(--page-subtle),
+
+  // ----------------------------------------
+  // Chips
+  // ----------------------------------------
+  "chips-size-border-width": 1px,
+
+  "chips-size-small-height": var(--global-scale-250),
+  "chips-size-small-gap": var(--global-scale-50),
+  "chips-size-small-padding-x": var(--global-scale-75),
+  "chips-size-small-padding-y": var(--global-scale-25),
+  "chips-size-small-icon-size": var(--global-scale-200),
+  "chips-size-small-radius-default": var(--global-scale-100),
+  "chips-size-small-radius-round": 1440px,
+
+  "chips-size-medium-height": var(--global-scale-300),
+  "chips-size-medium-gap": var(--global-scale-50),
+  "chips-size-medium-padding-x": var(--global-scale-100),
+  "chips-size-medium-padding-y": var(--global-scale-50),
+  "chips-size-medium-icon-size": var(--global-scale-250),
+  "chips-size-medium-radius-default": var(--global-scale-100),
+  "chips-size-medium-radius-round": 1440px,
+
+  "chips-size-large-height": var(--global-scale-400),
+  "chips-size-large-gap": var(--global-scale-50),
+  "chips-size-large-padding-x": var(--global-scale-150),
+  "chips-size-large-padding-y": var(--global-scale-100),
+  "chips-size-large-icon-size": var(--global-scale-250),
+  "chips-size-large-radius-default": var(--global-scale-150),
+  "chips-size-large-radius-round": 1440px,
+
+  "chips-primary-background-color-default": var(--text-primary-moderate),
+  "chips-primary-background-color-hover": var(--text-primary-subtle),
+  "chips-primary-background-color-pressed": var(--text-primary-strong),
+  "chips-primary-background-color-disabled": var(--text-primary-disabled),
+  "chips-primary-foreground-color-default": var(--page-subtle),
+  "chips-primary-foreground-color-disabled": var(--cards-primary-subtle),
+
+  "chips-accent-background-color-default": var(--feedback-background-color-primary-subtle),
+  "chips-accent-background-color-hover": var(--text-primary-moderate),
+  "chips-accent-background-color-pressed": var(--text-primary-moderate),
+  "chips-accent-background-color-disabled": var(--cards-primary-subtle),
+  "chips-accent-foreground-color-default": var(--text-primary-moderate),
+  "chips-accent-foreground-color-disabled": var(--text-primary-disabled),
+
+  "chips-outline-background-color-default": var(--feedback-background-color-primary-subtle),
+  "chips-outline-background-color-hover": var(--text-primary-moderate),
+  "chips-outline-background-color-pressed": var(--text-primary-moderate),
+  "chips-outline-background-color-disabled": var(--cards-primary-subtle),
+  "chips-outline-foreground-color-default": var(--text-primary-moderate),
+  "chips-outline-foreground-color-hover": var(--text-primary-disabled),
+  "chips-outline-foreground-color-disabled": var(--text-primary-disabled),
+
+  // ----------------------------------------
+  // Badges
+  // ----------------------------------------
+  "badge-size-small-height": var(--global-scale-300),
+  "badge-size-small-gap": var(--global-scale-50),
+  "badge-size-small-horizontal-padding": var(--global-scale-100),
+  "badge-size-small-vertical-padding": var(--global-scale-50),
+  "badge-size-small-radius": var(--global-scale-100),
+
+  "badge-size-medium-height": var(--global-scale-350),
+  "badge-size-medium-gap": var(--global-scale-50),
+  "badge-size-medium-horizontal-padding": var(--global-scale-100),
+  "badge-size-medium-vertical-padding": var(--global-scale-50),
+  "badge-size-medium-radius": var(--global-scale-100),
+
+  "badge-size-large-height": var(--global-scale-450),
+  "badge-size-large-gap": var(--global-scale-50),
+  "badge-size-large-horizontal-padding": var(--global-scale-150),
+  "badge-size-large-vertical-padding": var(--global-scale-100),
+  "badge-size-large-radius": var(--global-scale-150),
+
+  "badge-type-primary": var(--page-subtle),
+  "badge-type-neutral": var(--page-subtle),
+
+  // ----------------------------------------
+  // Layout & Overlays (Separator, BottomSheet, Popover, Tabs)
+  // ----------------------------------------
+  "seperator-default": var(--text-disabled),
+  "seperator-subtle": var(--text-subtle),
+  "seperator-strong": var(--text-strong),
+  "seperator-border-width": 1px,
+
+  "bottomsheet-default": var(--text-disabled),
+  "bottomsheet-subtle": var(--text-subtle),
+  "bottomsheet-strong": var(--text-strong),
+
+  "popover-default": var(--text-disabled),
+  "popover-subtle": var(--text-subtle),
+  "popover-strong": var(--text-strong),
+
+  "tabs-vertical-padding": var(--global-scale-200),
+  "tabs-horizontal-padding": var(--global-scale-150),
+  "tabs-horizontal-gap": var(--global-scale-50),
+  "tabs-vertical-gap": var(--global-scale-200),
+  "tabs-focus-ring": var(--page-subtle),
+  "tabs-active-indicator": var(--text-primary-moderate),
+
+  // ----------------------------------------
+  // Pagination
+  // ----------------------------------------
+  "pagination-horizontal-padding": var(--global-scale-50),
+  "pagination-horizontal-gap": var(--global-scale-50),
+  "pagination-horizontal-gap-2": var(--global-scale-150),
+  "pagination-focus": var(--text-primary-moderate),
+
+  "pagination-action-default": var(--icon-default),
+  "pagination-action-hover": var(--icon-subtle),
+  "pagination-action-pressed": var(--icon-moderate),
+  "pagination-action-disabled": var(--icon-disabled),
+
+  "pagination-base-selected-default": var(--text-primary-moderate),
+  "pagination-base-selected-hover": var(--text-primary-subtle),
+  "pagination-base-selected-pressed": var(--text-primary-strong),
+
+  "pagination-base-deselected-default": var(--page-subtle),
+  "pagination-base-deselected-hover": var(--cards-primary-subtle),
+  "pagination-base-deselected-pressed": var(--button-secondary-background-color-pressed),
+
+  // ----------------------------------------
+  // Components (Progress Bar, Avatar, Toast, Ratings, Snackbar)
+  // ----------------------------------------
+  "progress-bar-radius": 1440px,
+  "progress-bar-linear-height": var(--global-scale-100),
+  "progress-bar-circular-small-height": var(--global-scale-500),
+  "progress-bar-circular-medium-height": var(--global-scale-850),
+
+  "avatar-border-radius": 1440px,
+  "avatar-status-padding": var(--global-scale-50),
+  "avatar-size-xxxlarge": var(--global-scale-900),
+  "avatar-size-xxlarge": var(--global-scale-800),
+  "avatar-size-xlarge": var(--global-scale-700),
+  "avatar-size-large": var(--global-scale-600),
+  "avatar-size-medium": var(--global-scale-500),
+  "avatar-size-small": var(--global-scale-400),
+  "avatar-size-xsmall": var(--global-scale-300),
+  "avatar-size-status": var(--global-scale-300),
+
+  "toast-border-radius": var(--global-scale-100),
+  "toast-padding-x": var(--global-scale-150),
+  "toast-padding-y": var(--global-scale-100),
+  "toast-height": var(--global-scale-450),
+
+  "ratings-height": var(--global-scale-300),
+
+  "snackbar-size-padding-x-single-line": var(--global-scale-150),
+  "snackbar-size-padding-y-single-line": var(--global-scale-50),
+  "snackbar-size-padding-x": var(--global-scale-200),
+  "snackbar-size-padding-y": var(--global-scale-150),
+  "snackbar-size-gap": var(--global-scale-100),
+  "snackbar-size-radius": var(--global-scale-100)
+);
+
+// ==========================================
+// RENDER MIXIN & CSS OUTPUT
+// ==========================================
+@mixin render-vars($map, $prefix: '') {
+  @each $key, $value in $map {
+    --#{$prefix}#{$key}: #{$value};
+  }
+}
 
 :root {
-  --page-subtle: #FFFFFF;
-  --page-moderate: #F5F5F5;
-  --text-subtle: #444444;
-  --text-moderate: #2C2C2C;
-  --text-strong: #111111;
-  --text-inverse: var(--page-subtle);
-  --text-disabled: #D9D9D9;
-  --text-static: var(--page-subtle);
-  --text-primary-subtle: #3B5CE1;
-  --text-primary-moderate: #1C3FCA;
-  --text-primary-strong: #1F30AD;
-  --text-primary-disabled: #9CB4F7;
-  --cards-neutral-subtle: var(--page-subtle);
-  --cards-neutral-moderate: var(--page-moderate);
-  --cards-neutral-strong: var(--text-disabled);
-  --cards-primary-subtle: #F3F6FD;
-  --cards-primary-moderate: var(--text-primary-disabled);
-  --feedback-background-color-primary-subtle: var(--cards-primary-subtle);
-  --feedback-background-color-primary-moderate: var(--text-primary-moderate);
-  --feedback-background-color-neutral-subtle: var(--page-moderate);
-  --feedback-background-color-neutral-default: #383838;
-  --feedback-background-color-info-subtle: #EBFCFE;
-  --feedback-background-color-info-moderate: #2A78C6;
-  --feedback-background-color-success-subtle: #EFFAF2;
-  --feedback-background-color-success-moderate: #00815A;
-  --feedback-background-color-warning-subtle: #FEFAEC;
-  --feedback-background-color-warning-moderate: #B65805;
-  --feedback-background-color-error-subtle: #FDF1F4;
-  --feedback-background-color-error-moderate: #D61C53;
-  --feedback-background-color-violet-subtle: #F4F0FF;
-  --feedback-background-color-violet-moderate: #7454F2;
-  --feedback-background-color-purple-subtle: #FDEDFA;
-  --feedback-background-color-purple-moderate: #A84AB8;
-  --feedback-background-color-rust-subtle: #FDEFED;
-  --feedback-background-color-rust-moderate: #A85C51;
-  --feedback-background-color-yellow-subtle: #FDFAE7;
-  --feedback-background-color-yellow-moderate: #F2B102;
-  --feedback-border-color-primary-subtle: var(--border-primary-disabled);
-  --feedback-border-color-primary-moderate: var(--text-primary-strong);
-  --feedback-border-color-neutral-subtle: var(--text-disabled);
-  --feedback-border-color-neutral-moderate: var(--feedback-background-color-neutral-default);
-  --feedback-border-color-info-subtle: #B7EFFE;
-  --feedback-border-color-info-moderate: #2974C1;
-  --feedback-border-color-success-subtle: #ACE5C9;
-  --feedback-border-color-success-moderate: #076246;
-  --feedback-border-color-warning-subtle: #F7C599;
-  --feedback-border-color-warning-moderate: #804006;
-  --feedback-border-color-error-subtle: #F49BB3;
-  --feedback-border-color-error-moderate: #A30F3B;
-  --feedback-border-color-violet-subtle: #C7B9FF;
-  --feedback-border-color-violet-moderate: #5236C9;
-  --feedback-border-color-purple-subtle: #E6B5EE;
-  --feedback-border-color-purple-moderate: #893399;
-  --feedback-border-color-rust-subtle: #E7BCB6;
-  --feedback-border-color-rust-moderate: #85463C;
-  --feedback-border-color-yellow-subtle: #FFE8AC;
-  --feedback-border-color-yellow-moderate: #8F6B00;
-  --feedback-border-color-static-subtle: var(--page-subtle);
-  --feedback-icon-color-primary-subtle: var(--text-primary-moderate);
-  --feedback-icon-color-neutral-subtle: var(--feedback-background-color-neutral-default);
-  --feedback-icon-color-info-subtle: var(--feedback-border-color-info-moderate);
-  --feedback-icon-color-success-subtle: var(--feedback-border-color-success-moderate);
-  --feedback-icon-color-warning-subtle: var(--feedback-border-color-warning-moderate);
-  --feedback-icon-color-error-subtle: var(--feedback-border-color-error-moderate);
-  --feedback-icon-color-violet-subtle: var(--feedback-border-color-violet-moderate);
-  --feedback-icon-color-purple-subtle: var(--feedback-border-color-purple-moderate);
-  --feedback-icon-color-rust-subtle: var(--feedback-border-color-rust-moderate);
-  --feedback-icon-color-yellow-subtle: var(--feedback-border-color-yellow-moderate);
-  --feedback-icon-color-static-subtle: var(--page-subtle);
-  --feedback-icon-color-static-moderate: var(--feedback-background-color-neutral-default);
-  --feedback-text-color-primary-subtle: var(--text-primary-disabled);
-  --feedback-text-color-primary-moderate: var(--text-primary-moderate);
-  --feedback-text-color-neutral-subtle: var(--feedback-background-color-neutral-default);
-  --feedback-text-color-info-subtle: var(--feedback-border-color-info-moderate);
-  --feedback-text-color-success-subtle: var(--feedback-border-color-success-moderate);
-  --feedback-text-color-warning-subtle: var(--feedback-border-color-warning-moderate);
-  --feedback-text-color-error-subtle: var(--feedback-border-color-error-moderate);
-  --feedback-text-color-violet-subtle: var(--feedback-border-color-violet-moderate);
-  --feedback-text-color-purple-subtle: var(--feedback-border-color-purple-moderate);
-  --feedback-text-color-rust-subtle: var(--feedback-border-color-rust-moderate);
-  --feedback-text-color-yellow-subtle: var(--feedback-border-color-yellow-moderate);
-  --feedback-text-color-static-subtle: var(--page-subtle);
-  --feedback-text-color-static-strong: var(--feedback-background-color-neutral-default);
-  --icon-subtle: var(--text-subtle);
-  --icon-moderate: var(--text-moderate);
-  --icon-default: var(--text-strong);
-  --icon-inverse: var(--page-subtle);
-  --icon-disabled: var(--text-disabled);
-  --icon-static: var(--page-subtle);
-  --icon-primary-subtle: var(--text-primary-disabled);
-  --icon-primary-default: var(--text-primary-moderate);
-  --icon-primary-strong: #112266;
-  --icon-success-subtle: var(--feedback-border-color-success-subtle);
-  --icon-success-default: var(--feedback-background-color-success-moderate);
-  --icon-success-strong: #11362A;
-  --icon-warning-subtle: var(--feedback-border-color-warning-subtle);
-  --icon-warning-default: var(--feedback-background-color-warning-moderate);
-  --icon-warning-strong: #38210B;
-  --icon-danger-subtle: var(--feedback-border-color-error-subtle);
-  --icon-danger-default: var(--feedback-background-color-error-moderate);
-  --icon-danger-strong: #3C1620;
-  --icon-info-subtle: var(--feedback-border-color-info-subtle);
-  --icon-info-default: var(--feedback-background-color-info-moderate);
-  --icon-info-strong: #153A65;
-  --icon-purple-subtle: var(--feedback-border-color-purple-subtle);
-  --icon-purple-default: var(--feedback-background-color-purple-moderate);
-  --icon-purple-strong: #581F63;
-  --icon-rust-subtle: var(--feedback-border-color-rust-subtle);
-  --icon-rust-default: var(--feedback-background-color-rust-moderate);
-  --icon-rust-strong: #3D221E;
-  --icon-yellow-subtle: var(--feedback-border-color-yellow-subtle);
-  --icon-yellow-default: var(--feedback-background-color-yellow-moderate);
-  --icon-yellow-strong: #533F04;
-  --icon-violet-subtle: var(--feedback-border-color-violet-subtle);
-  --icon-violet-default: var(--feedback-background-color-violet-moderate);
-  --icon-violet-strong: #241950;
-  --border-default: var(--text-disabled);
-  --border-strong: var(--text-subtle);
-  --border-inverse: var(--page-subtle);
-  --border-static: var(--page-subtle);
-  --border-focused: var(--border-primary-moderate);
-  --border-disabled: var(--text-primary-disabled);
-  --border-primary-subtle: var(--text-primary-subtle);
-  --border-primary-moderate: var(--text-primary-moderate);
-  --border-primary-default: var(--text-primary-moderate);
-  --border-primary-strong: var(--text-primary-strong);
-  --border-primary-disabled: var(--text-primary-disabled);
-  --visual-icon-xs: 8px;
-  --visual-icon-sm: 12px;
-  --visual-icon-md: 16px;
-  --visual-icon-lg: 20px;
-  --visual-icon-xl: 24px;
-  --visual-icon-2xl: 32px;
-  --visual-icon-3xl: 40px;
-  --visual-icon-stroke-2xs: 0.5px;
-  --visual-icon-stroke-xs: 1px;
-  --visual-icon-stroke-sm: 1.5px;
-  --visual-icon-stroke-md: 2px;
-  --visual-icon-stroke-lg: 2.5px;
-  --visual-illustration-xs: 48px;
-  --visual-illustration-sm: 64px;
-  --visual-illustration-md: 80px;
-  --visual-illustration-lg: 96px;
-  --visual-illustration-xl: 120px;
-  --visual-illustration-2xl: 140px;
-  --visual-illustration-3xl: 160px;
-  --visual-illustration-4xl: 200px;
-  --visual-illustration-5xl: 240px;
-  --visual-illustration-6xl: 280px;
-  --visual-illustration-7xl: 320px;
-  --visual-logo-xs: 8px;
-  --visual-logo-sm: 12px;
-  --visual-logo-md: 16px;
-  --visual-logo-lg: 20px;
-  --visual-logo-xl: 24px;
-  --visual-logo-2xl: 32px;
-  --visual-logo-3xl: 40px;
-  --visual-logo-4xl: 48px;
-  --control-checkbox-size-number: 0;
-  --control-checkbox-size-small-height: 16px;
-  --control-checkbox-size-small-padding: 2px;
-  --control-checkbox-size-small-radius: 4px;
-  --control-checkbox-size-medium-height: 20px;
-  --control-checkbox-size-medium-radius: 4px;
-  --control-checkbox-size-medium-padding: 4px;
-  --control-checkbox-size-large-height: 24px;
-  --control-checkbox-size-large-radius: 6px;
-  --control-checkbox-size-large-padding: 4px;
-  --control-radio-size-radius: 1440px;
-  --control-radio-size-small-height: 16px;
-  --control-radio-size-medium-height: 20px;
-  --control-radio-size-large-height: 24px;
-  --control-toggle-size-radius: 1440px;
-  --control-toggle-size-small-track-width: 28px;
-  --control-toggle-size-small-radius: 0;
-  --control-toggle-size-small-padding-x: 2px;
-  --control-toggle-size-small-padding-y: 2px;
-  --control-toggle-size-small-focus-border-width: 1.5;
-  --control-toggle-size-medium-track-width: 36px;
-  --control-toggle-size-medium-radius: 0;
-  --control-toggle-size-medium-padding-x: 2px;
-  --control-toggle-size-medium-padding-y: 2px;
-  --control-toggle-size-medium-focus-border-width: 2;
-  --control-toggle-size-large-track-width: 44px;
-  --control-toggle-size-large-radius: 0;
-  --control-toggle-size-large-padding-x: 4px;
-  --control-toggle-size-large-padding-y: 4px;
-  --control-toggle-size-large-focus-border-width: 2.5;
-  --control-background-color-default: var(--text-primary-moderate);
-  --control-background-color-disabled: var(--page-moderate);
-  --control-background-color-disabled-2: var(--text-disabled);
-  --control-background-color-white: var(--page-subtle);
-  --control-background-color-primary-disabled: var(--text-primary-disabled);
-  --control-border-color-default: var(--border-primary-default);
-  --control-border-color-primary: var(--border-default);
-  --control-border-color-disabled: var(--border-default);
-  --control-border-color-focus: var(--page-subtle);
-  --control-border-color-primary-disabled: var(--text-primary-disabled);
-  --control-icon-color-default: var(--page-subtle);
-  --control-icon-color-disabled: var(--page-subtle);
-  --control-icon-color-focus: var(--page-subtle);
-  --forms-text-input-size-small-height: 52px;
-  --forms-text-input-size-small-padding: 16px;
-  --forms-text-input-size-small-icon-size: 20px;
-  --forms-text-input-size-small-gap: 12px;
-  --forms-text-input-size-small-radius: 12px;
-  --forms-text-input-size-small-border-width: 1;
-  --forms-text-input-size-small-focus-border-width: 2;
-  --forms-text-input-size-medium-height: 64px;
-  --forms-text-input-size-medium-padding: 20px;
-  --forms-text-input-size-medium-icon-size: 20px;
-  --forms-text-input-size-medium-gap: 12px;
-  --forms-text-input-size-medium-radius: 12px;
-  --forms-text-input-size-medium-border-width: 1;
-  --forms-text-input-size-medium-focus-border-width: 2;
-  --forms-text-area-size-small-height: 150px;
-  --forms-text-area-size-small-padding: 16px;
-  --forms-text-area-size-small-gap: 8px;
-  --forms-text-area-size-small-radius: 12px;
-  --forms-text-area-size-small-border-width: 1;
-  --forms-text-area-size-small-focus-border-width: 2;
-  --forms-text-area-size-medium-height: 200px;
-  --forms-text-area-size-medium-padding: 20px;
-  --forms-text-area-size-medium-gap: 12px;
-  --forms-text-area-size-medium-radius: 12px;
-  --forms-text-area-size-medium-border-width: 1;
-  --forms-text-area-size-medium-focus-border-width: 2;
-  --forms-mpin-size-small-height: 52px;
-  --forms-mpin-size-small-padding: 16px;
-  --forms-mpin-size-small-radius: 12px;
-  --forms-mpin-size-small-border-width: 1;
-  --forms-mpin-size-small-focus-border-width: 2;
-  --forms-mpin-size-medium-height: 64px;
-  --forms-mpin-size-medium-padding: 20px;
-  --forms-mpin-size-medium-radius: 12px;
-  --forms-mpin-size-medium-border-width: 1;
-  --forms-mpin-size-medium-focus-border-width: 2;
-  --forms-background-color-default: var(--page-subtle);
-  --forms-background-color-disabled: var(--cards-primary-subtle);
-  --forms-border-color-default: var(--text-disabled);
-  --forms-border-color-focus: var(--border-primary-moderate);
-  --forms-border-color-error: var(--feedback-border-color-error-subtle);
-  --forms-border-color-success: var(--feedback-border-color-success-subtle);
-  --forms-text-color-placeholder: var(--text-subtle);
-  --forms-text-color-input: var(--text-strong);
-  --forms-text-color-active: var(--text-primary-moderate);
-  --forms-text-color-error: var(--feedback-text-color-error-subtle);
-  --forms-text-color-success: var(--feedback-text-color-success-subtle);
-  --forms-text-color-disabled: var(--text-disabled);
-  --forms-icon-color-default: var(--icon-default);
-  --forms-icon-color-subtle: var(--icon-subtle);
-  --forms-icon-color-disabled: var(--icon-disabled);
-  --forms-icon-color-disabled-brand: #5C6172;
-  --button-focus-border-width: 2;
-  --button-focus-white: var(--border-static);
-  --button-size-border-width: 1;
-  --button-size-internal-padding: 4px;
-  --button-size-icon-style: flatten;
-  --button-size-xsmall-height: 28px;
-  --button-size-xsmall-gap: 2px;
-  --button-size-xsmall-radius: 8px;
-  --button-size-xsmall-padding-x: 8px;
-  --button-size-xsmall-icon-size: 16px;
-  --button-size-xsmall-padding-icon-button: 8px;
-  --button-size-small-height: 36px;
-  --button-size-small-gap: 2px;
-  --button-size-small-radius: 8px;
-  --button-size-small-padding-x: 12px;
-  --button-size-small-icon-size: 16px;
-  --button-size-medium-height: 40px;
-  --button-size-medium-gap: 4px;
-  --button-size-medium-radius: 12px;
-  --button-size-medium-padding-x: 16px;
-  --button-size-medium-icon-size: 20px;
-  --button-size-large-height: 48px;
-  --button-size-large-gap: 4px;
-  --button-size-large-radius: 12px;
-  --button-size-large-padding-x: 20px;
-  --button-size-large-icon-size: 20px;
-  --button-primary-background-color-default: var(--text-primary-moderate);
-  --button-primary-background-color-hover: var(--text-primary-subtle);
-  --button-primary-background-color-pressed: var(--text-primary-strong);
-  --button-primary-background-color-disabled: var(--text-primary-disabled);
-  --button-primary-foreground-color-static: var(--page-subtle);
-  --button-primary-foreground-color-disabled: var(--cards-primary-subtle);
-  --button-secondary-background-color-default: var(--page-subtle);
-  --button-secondary-background-color-hover: var(--cards-primary-subtle);
-  --button-secondary-background-color-pressed: #E1E9FE;
-  --button-secondary-background-color-disabled: var(--page-subtle);
-  --button-secondary-foreground-color-default: var(--text-primary-moderate);
-  --button-secondary-foreground-color-hover: var(--text-primary-moderate);
-  --button-secondary-foreground-color-pressed: var(--text-primary-strong);
-  --button-secondary-foreground-color-disabled: var(--text-primary-disabled);
-  --button-tertiary-background-color-default: var(--page-subtle);
-  --button-tertiary-background-color-hover: var(--cards-primary-subtle);
-  --button-tertiary-background-color-pressed: var(--button-secondary-background-color-pressed);
-  --button-tertiary-background-color-disabled: var(--page-subtle);
-  --button-tertiary-foreground-color-default: var(--text-primary-moderate);
-  --button-tertiary-foreground-color-hover: var(--text-primary-moderate);
-  --button-tertiary-foreground-color-pressed: var(--text-primary-strong);
-  --button-tertiary-foreground-color-disabled: var(--text-primary-disabled);
-  --button-link-foreground-color-default: var(--text-primary-moderate);
-  --button-link-foreground-color-hover: var(--text-primary-moderate);
-  --button-link-foreground-color-pressed: var(--text-primary-strong);
-  --button-link-foreground-color-disabled: var(--text-primary-disabled);
-  --button-white-primary-background-color-default: var(--page-subtle);
-  --button-white-primary-background-color-hover: var(--page-subtle);
-  --button-white-primary-background-color-pressed: var(--page-subtle);
-  --button-white-primary-background-color-disabled: var(--page-subtle);
-  --button-white-primary-foreground-color-default: var(--text-primary-moderate);
-  --button-white-primary-foreground-color-hover: var(--text-primary-moderate);
-  --button-white-primary-foreground-color-pressed: var(--text-primary-moderate);
-  --button-white-primary-foreground-color-disabled: var(--text-primary-disabled);
-  --button-white-secondary-background-color-default: var(--page-subtle);
-  --button-white-secondary-background-color-hover: var(--page-subtle);
-  --button-white-secondary-background-color-pressed: var(--page-subtle);
-  --button-white-secondary-background-color-disabled: var(--page-subtle);
-  --button-white-secondary-foreground-color-default: var(--page-subtle);
-  --button-white-secondary-foreground-color-hover: var(--page-subtle);
-  --button-white-secondary-foreground-color-pressed: var(--page-subtle);
-  --button-white-secondary-foreground-color-disabled: var(--page-subtle);
-  --button-white-tertiary-background-color-default: var(--page-subtle);
-  --button-white-tertiary-background-color-hover: var(--page-subtle);
-  --button-white-tertiary-background-color-pressed: var(--page-subtle);
-  --button-white-tertiary-background-color-disabled: var(--page-subtle);
-  --button-white-tertiary-foreground-color-default: var(--page-subtle);
-  --button-white-tertiary-foreground-color-hover: var(--page-subtle);
-  --button-white-tertiary-foreground-color-pressed: var(--page-subtle);
-  --button-white-tertiary-foreground-color-disabled: var(--page-subtle);
-  --button-white-link-foreground-color-default: var(--page-subtle);
-  --button-white-link-foreground-color-hover: var(--page-subtle);
-  --button-white-link-foreground-color-pressed: var(--page-subtle);
-  --button-white-link-foreground-color-disabled: var(--page-subtle);
-  --chips-size-border-width: 1;
-  --chips-size-small-height: 20px;
-  --chips-size-small-gap: 4px;
-  --chips-size-small-padding-x: 6px;
-  --chips-size-small-padding-y: 2px;
-  --chips-size-small-icon-size: 16px;
-  --chips-size-small-radius-default: 8px;
-  --chips-size-small-radius-round: 1440px;
-  --chips-size-medium-height: 24px;
-  --chips-size-medium-gap: 4px;
-  --chips-size-medium-padding-x: 8px;
-  --chips-size-medium-padding-y: 4px;
-  --chips-size-medium-icon-size: 20px;
-  --chips-size-medium-radius-default: 8px;
-  --chips-size-medium-radius-round: 1440px;
-  --chips-size-large-height: 32px;
-  --chips-size-large-gap: 4px;
-  --chips-size-large-padding-x: 12px;
-  --chips-size-large-padding-y: 8px;
-  --chips-size-large-icon-size: 20px;
-  --chips-size-large-radius-default: 12px;
-  --chips-size-large-radius-round: 1440px;
-  --chips-primary-background-color-default: var(--text-primary-moderate);
-  --chips-primary-background-color-hover: var(--text-primary-subtle);
-  --chips-primary-background-color-pressed: var(--text-primary-strong);
-  --chips-primary-background-color-disabled: var(--text-primary-disabled);
-  --chips-primary-foreground-color-default: var(--page-subtle);
-  --chips-primary-foreground-color-disabled: var(--cards-primary-subtle);
-  --chips-accent-background-color-default: var(--feedback-background-color-primary-subtle);
-  --chips-accent-background-color-hover: var(--text-primary-moderate);
-  --chips-accent-background-color-pressed: var(--text-primary-moderate);
-  --chips-accent-background-color-disabled: var(--cards-primary-subtle);
-  --chips-accent-foreground-color-default: var(--text-primary-moderate);
-  --chips-accent-foreground-color-disabled: var(--text-primary-disabled);
-  --chips-outline-background-color-default: var(--feedback-background-color-primary-subtle);
-  --chips-outline-background-color-hover: var(--text-primary-moderate);
-  --chips-outline-background-color-pressed: var(--text-primary-moderate);
-  --chips-outline-background-color-disabled: var(--cards-primary-subtle);
-  --chips-outline-foreground-color-default: var(--text-primary-moderate);
-  --chips-outline-foreground-color-hover: var(--text-primary-disabled);
-  --chips-outline-foreground-color-disabled: var(--text-primary-disabled);
-  --badge-size-small-height: 24px;
-  --badge-size-small-gap: 4px;
-  --badge-size-small-horizontal-padding: 8px;
-  --badge-size-small-vertical-padding: 4px;
-  --badge-size-small-radius: 8px;
-  --badge-size-medium-height: 28px;
-  --badge-size-medium-gap: 4px;
-  --badge-size-medium-horizontal-padding: 8px;
-  --badge-size-medium-vertical-padding: 4px;
-  --badge-size-medium-radius: 8px;
-  --badge-size-large-height: 36px;
-  --badge-size-large-gap: 4px;
-  --badge-size-large-horizontal-padding: 12px;
-  --badge-size-large-vertical-padding: 8px;
-  --badge-size-large-radius: 12px;
-  --badge-type-primary: var(--page-subtle);
-  --badge-type-neutral: var(--page-subtle);
-  --seperator-default: var(--text-disabled);
-  --seperator-subtle: var(--text-subtle);
-  --seperator-strong: var(--text-strong);
-  --seperator-border-width: 1;
-  --bottomsheet-default: var(--text-disabled);
-  --bottomsheet-subtle: var(--text-subtle);
-  --bottomsheet-strong: var(--text-strong);
-  --popover-default: var(--text-disabled);
-  --popover-subtle: var(--text-subtle);
-  --popover-strong: var(--text-strong);
-  --tabs-vertical-padding: 16px;
-  --tabs-horizontal-padding: 12px;
-  --tabs-horizontal-gap: 4px;
-  --tabs-vertical-gap: 16px;
-  --tabs-focus-ring: var(--page-subtle);
-  --tabs-active-indicator: var(--text-primary-moderate);
-  --pagination-horizontal-padding: 4px;
-  --pagination-horizontal-gap: 4px;
-  --pagination-horizontal-gap-2: 12px;
-  --pagination-focus: var(--text-primary-moderate);
-  --pagination-action-default: var(--icon-default);
-  --pagination-action-hover: var(--icon-subtle);
-  --pagination-action-pressed: var(--icon-moderate);
-  --pagination-action-disabled: var(--icon-disabled);
-  --pagination-base-selected-default: var(--text-primary-moderate);
-  --pagination-base-selected-hover: var(--text-primary-subtle);
-  --pagination-base-selected-pressed: var(--text-primary-strong);
-  --pagination-base-deselected-default: var(--page-subtle);
-  --pagination-base-deselected-hover: var(--cards-primary-subtle);
-  --pagination-base-deselected-pressed: var(--button-secondary-background-color-pressed);
-  --progress-bar-radius: 1440px;
-  --progress-bar-linear-height: 8px;
-  --progress-bar-circular-small-height: 40px;
-  --progress-bar-circular-medium-height: 68px;
-  --avatar-border-radius: 1440;
-  --avatar-status-padding: 4px;
-  --avatar-size-xxxlarge: 72px;
-  --avatar-size-xxlarge: 64px;
-  --avatar-size-xlarge: 56px;
-  --avatar-size-large: 48px;
-  --avatar-size-medium: 40px;
-  --avatar-size-small: 32px;
-  --avatar-size-xsmall: 24px;
-  --avatar-size-status: 24px;
-  --toast-border-radius: 8;
-  --toast-padding-x: 12px;
-  --toast-padding-y: 8px;
-  --toast-height: 36px;
-  --ratings-height: 24px;
-  --snackbar-size-padding-x-single-line: 12px;
-  --snackbar-size-padding-y-single-line: 4px;
-  --snackbar-size-padding-x: 16px;
-  --snackbar-size-padding-y: 12px;
-  --snackbar-size-gap: 8px;
-  --snackbar-size-radius: 8px;
+  @include render-vars($semantic-tokens);
 }
+
+// Example usage in a component SCSS file:
+// .button {
+//   background: var(--button-primary-background-color-default);
+//   color: var(--button-primary-foreground-color-static);
+//   height: var(--button-size-medium-height);
+//   border-radius: var(--button-size-medium-radius);
+//   padding-inline: var(--button-size-medium-padding-x);
+// }
+
+// This pattern keeps semantic names stable while values resolve to primitive variables.

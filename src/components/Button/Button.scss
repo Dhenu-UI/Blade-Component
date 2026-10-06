@@ -18,16 +18,12 @@
 }
 
 .btn-large {
-    height: var(--button-size-large-height);
-    padding: 0 var(--space-48);
+    height: var(--ramps-48);
     border-radius: var(--radius-md);
 }
 
 .btn-primary {
-    background: var(--button-primary-background-color-default);
-    color: var(--white);
-}
-
-.btn-primary:hover {
-    background-color: color-mix(in srgb, var(--button-primary-background-color-default), black 10%);
+    padding: var(--ramps-28);
+    color: var(--global-colors-blue-500);
+    background: var(--global-colors-red-400);
 }

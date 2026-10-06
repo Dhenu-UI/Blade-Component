@@ -1,122 +1,85 @@
-// 🤖 Auto-generated SCSS variables from layout.tokens.json
-$radius-3xs: 0;
-$radius-2xs: 4px;
-$radius-xs: 6px;
-$radius-sm: 8px;
-$radius-md: 12px;
-$radius-lg: 16px;
-$radius-xl: 20px;
-$radius-2xl: 24px;
-$radius-full: 1440px;
-$spacing-2xs: 2px;
-$spacing-xs: 4px;
-$spacing-sm: 8px;
-$spacing-md: 12px;
-$spacing-lg: 16px;
-$spacing-xl: 20px;
-$spacing-2xl: 24px;
-$spacing-3xl: 28px;
-$spacing-4xl: 32px;
-$spacing-5xl: 40px;
-$spacing-6xl: 48px;
-$spacing-7xl: 64px;
-$spacing-8xl: 80px;
-$border-2xs: 0.5;
-$border-xs: 1;
-$border-sm: 1.5;
-$border-md: 2;
-$border-lg: 2.5;
-$border-xl: 3;
-$size-xxs: 0;
-$size-xs: 8px;
-$size-sm: 12px;
-$size-md: 16px;
-$size-lg: 20px;
-$size-xl: 24px;
-$size-2xl: 28px;
-$size-3xl: 32px;
-$size-4xl: 36px;
-$size-5xl: 40px;
-$size-6xl: 48px;
-$size-7xl: 64px;
-$size-8xl: 80px;
-$size-9xl: 96px;
-$size-10xl: 120px;
-$size-11xl: 140px;
-$size-12xl: 160px;
-$size-13xl: 200px;
-$size-14xl: 240px;
-$size-15xl: 280px;
-$size-16xl: 320px;
-$margin-mobile: 16px;
-$margin-tablet: 32px;
-$margin-desktop: 56px;
-$gutter-mobile: 8px;
-$gutter-tablet: 16px;
-$gutter-desktop: 20px;
-$screen-behaviour-mobile: 360px;
-$screen-behaviour-tablet: 768px;
-$screen-behaviour-desktop: 1280px;
-$screen-behaviour-large-desktop: 1440px;
+@use './primitives' as *;
+
+$layout-tokens: (
+  // Radius
+  "radius-3xs": var(--global-scale-0),
+  "radius-2xs": var(--global-scale-50),
+  "radius-xs": var(--global-scale-75),
+  "radius-sm": var(--global-scale-100),
+  "radius-md": var(--global-scale-150),
+  "radius-lg": var(--global-scale-200),
+  "radius-xl": var(--global-scale-250),
+  "radius-2xl": var(--global-scale-300),
+  "radius-full": var(--global-scale-18000),
+
+  // Spacing
+  "spacing-2xs": var(--global-scale-25),
+  "spacing-xs": var(--global-scale-50),
+  "spacing-sm": var(--global-scale-100),
+  "spacing-md": var(--global-scale-150),
+  "spacing-lg": var(--global-scale-200),
+  "spacing-xl": var(--global-scale-250),
+  "spacing-2xl": var(--global-scale-300),
+  "spacing-3xl": var(--global-scale-400),
+  "spacing-4xl": var(--global-scale-500),
+  "spacing-5xl": var(--global-scale-600),
+  "spacing-6xl": var(--global-scale-800),
+  "spacing-7xl": var(--global-scale-1000),
+  "spacing-8xl": var(--global-scale-1200),
+
+  // Common layout sizes
+  "size-0": var(--global-scale-0),
+  "size-25": var(--global-scale-25),
+  "size-50": var(--global-scale-50),
+  "size-75": var(--global-scale-75),
+  "size-100": var(--global-scale-100),
+  "size-150": var(--global-scale-150),
+  "size-200": var(--global-scale-200),
+  "size-250": var(--global-scale-250),
+  "size-300": var(--global-scale-300),
+  "size-350": var(--global-scale-350),
+  "size-400": var(--global-scale-400),
+  "size-450": var(--global-scale-450),
+  "size-500": var(--global-scale-500),
+  "size-600": var(--global-scale-600),
+  "size-800": var(--global-scale-800),
+  "size-1000": var(--global-scale-1000),
+  "size-1200": var(--global-scale-1200),
+  "size-1500": var(--global-scale-1500),
+  "size-1750": var(--global-scale-1750),
+  "size-2000": var(--global-scale-2000),
+  "size-2500": var(--global-scale-2500),
+  "size-3000": var(--global-scale-3000),
+  "size-3500": var(--global-scale-3500),
+  "size-4000": var(--global-scale-4000)
+);
+
+@function resolve-layout-value($value) {
+  @if type-of($value) == "string" and str-index($value, "var(") == 1 {
+    @return $value;
+  }
+
+  @if type-of($value) == "number" {
+    @return #{$value}px;
+  }
+
+  @return $value;
+}
+
+@mixin render-layout-vars($map, $prefix: "") {
+  @each $key, $value in $map {
+    --#{$prefix}#{$key}: #{resolve-layout-value($value)};
+  }
+}
 
 :root {
-  --radius-3xs: 0;
-  --radius-2xs: 4px;
-  --radius-xs: 6px;
-  --radius-sm: 8px;
-  --radius-md: 12px;
-  --radius-lg: 16px;
-  --radius-xl: 20px;
-  --radius-2xl: 24px;
-  --radius-full: 1440px;
-  --spacing-2xs: 2px;
-  --spacing-xs: 4px;
-  --spacing-sm: 8px;
-  --spacing-md: 12px;
-  --spacing-lg: 16px;
-  --spacing-xl: 20px;
-  --spacing-2xl: 24px;
-  --spacing-3xl: 28px;
-  --spacing-4xl: 32px;
-  --spacing-5xl: 40px;
-  --spacing-6xl: 48px;
-  --spacing-7xl: 64px;
-  --spacing-8xl: 80px;
-  --border-2xs: 0.5;
-  --border-xs: 1;
-  --border-sm: 1.5;
-  --border-md: 2;
-  --border-lg: 2.5;
-  --border-xl: 3;
-  --size-xxs: 0;
-  --size-xs: 8px;
-  --size-sm: 12px;
-  --size-md: 16px;
-  --size-lg: 20px;
-  --size-xl: 24px;
-  --size-2xl: 28px;
-  --size-3xl: 32px;
-  --size-4xl: 36px;
-  --size-5xl: 40px;
-  --size-6xl: 48px;
-  --size-7xl: 64px;
-  --size-8xl: 80px;
-  --size-9xl: 96px;
-  --size-10xl: 120px;
-  --size-11xl: 140px;
-  --size-12xl: 160px;
-  --size-13xl: 200px;
-  --size-14xl: 240px;
-  --size-15xl: 280px;
-  --size-16xl: 320px;
-  --margin-mobile: 16px;
-  --margin-tablet: 32px;
-  --margin-desktop: 56px;
-  --gutter-mobile: 8px;
-  --gutter-tablet: 16px;
-  --gutter-desktop: 20px;
-  --screen-behaviour-mobile: 360px;
-  --screen-behaviour-tablet: 768px;
-  --screen-behaviour-desktop: 1280px;
-  --screen-behaviour-large-desktop: 1440px;
+  @include render-layout-vars($layout-tokens, "layout-");
 }
+
+// Example usage in a component SCSS file:
+// .button {
+//   min-height: var(--layout-size-500);
+//   padding: var(--layout-spacing-sm);
+//   border-radius: var(--layout-radius-md);
+// }
+

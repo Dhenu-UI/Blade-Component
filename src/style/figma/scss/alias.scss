@@ -1,0 +1,237 @@
+@use 'sass:string';
+@use './primitives' as *;
+
+$dark-theme-tokens: (
+  // Brand & Root
+  "brand-logo-primary": "identity-hdfc-blue",
+  "brand-logo-secondary": "identity-hdfc-red",
+  "brand-logo-tertiary": "basic-white",
+  "surface-root-light": "grey-900",
+  "surface-root-dark": "basic-white",
+  "surface-root-opacity": "basic-white",
+
+  // Static Surfaces
+  "surface-static-white": "basic-white",
+  "surface-static-neutral": "grey-600",
+  "surface-static-neutral-2": "grey-900",
+  "surface-static-blue": "blue-500",
+  "surface-static-warning": "orange-500",
+  "surface-static-success": "green-500",
+  "surface-static-error": "red-500",
+  "surface-static-violet": "violet-500",
+  "surface-static-purple": "purple-500",
+  "surface-static-rust": "brown-500",
+  "surface-static-yellow": "yellow-500",
+  "surface-static-info": "light-blue-500",
+
+  // Primary Surfaces
+  "surface-primary-lighter": "blue-900",
+  "surface-primary-light": "blue-700",
+  "surface-primary-base": "blue-400",
+  "surface-primary-dark": "blue-200",
+  "surface-primary-darker": "blue-100",
+  "surface-primary-on-light": "blue-300",
+  "surface-primary-on-dark": "blue-800",
+  "surface-primary-interactive-lightest": "grey-400",
+  "surface-primary-interactive-lighter": "grey-700",
+  "surface-primary-interactive-light": "grey-700",
+  "surface-primary-interactive-base": "grey-400",
+  "surface-primary-interactive-dark": "blue-500",
+  "surface-primary-interactive-darkest": "blue-300",
+  "surface-primary-alpha-light": "blue-500",
+  "surface-primary-alpha-base": "blue-500",
+  "surface-primary-alpha-dark": "blue-500",
+
+  // Neutral Surfaces
+  "surface-neutral-lighter": "grey-800",
+  "surface-neutral-light": "grey-600",
+  "surface-neutral-base": "grey-300",
+  "surface-neutral-dark": "grey-200",
+  "surface-neutral-darker": "grey-50",
+  "surface-neutral-on-light": "grey-300",
+  "surface-neutral-on-dark": "grey-700",
+
+  // Slate Surfaces
+  "surface-slate-lighter": "slate-900",
+  "surface-slate-light": "slate-700",
+  "surface-slate-base": "slate-300",
+  "surface-slate-dark": "slate-200",
+  "surface-slate-darker": "slate-50",
+  "surface-slate-on-light": "slate-300",
+  "surface-slate-on-dark": "slate-800",
+
+  // Success Surfaces
+  "surface-success-lighter": "green-900",
+  "surface-success-light": "green-700",
+  "surface-success-base": "green-400",
+  "surface-success-dark": "green-200",
+  "surface-success-darker": "green-100",
+  "surface-success-on-light": "green-300",
+  "surface-success-on-dark": "green-800",
+
+  // Error Surfaces
+  "surface-error-lighter": "red-900",
+  "surface-error-light": "red-700",
+  "surface-error-base": "red-400",
+  "surface-error-dark": "red-200",
+  "surface-error-darker": "red-100",
+  "surface-error-on-light": "red-300",
+  "surface-error-on-dark": "red-800",
+
+  // Warning Surfaces
+  "surface-warning-lighter": "orange-900",
+  "surface-warning-light": "orange-700",
+  "surface-warning-base": "orange-400",
+  "surface-warning-dark": "orange-200",
+  "surface-warning-darker": "orange-100",
+  "surface-warning-on-light": "orange-300",
+  "surface-warning-on-dark": "orange-800",
+
+  // Info Surfaces
+  "surface-info-lighter": "light-blue-900",
+  "surface-info-light": "light-blue-700",
+  "surface-info-base": "light-blue-400",
+  "surface-info-dark": "light-blue-200",
+  "surface-info-darker": "light-blue-100",
+  "surface-info-on-light": "light-blue-300",
+  "surface-info-on-dark": "light-blue-800",
+
+  // Accent Surfaces
+  "surface-accent-purple-lighter": "purple-800",
+  "surface-accent-purple-light": "purple-700",
+  "surface-accent-purple-base": "purple-400",
+  "surface-accent-purple-dark": "purple-200",
+  "surface-accent-purple-darker": "purple-100",
+  "surface-accent-purple-on-light": "purple-300",
+  "surface-accent-purple-on-dark": "purple-800",
+
+  "surface-accent-rust-lighter": "brown-900",
+  "surface-accent-rust-light": "brown-700",
+  "surface-accent-rust-base": "brown-400",
+  "surface-accent-rust-dark": "brown-200",
+  "surface-accent-rust-darker": "brown-100",
+  "surface-accent-rust-on-light": "brown-300",
+  "surface-accent-rust-on-dark": "brown-800",
+
+  "surface-accent-yellow-lighter": "yellow-900",
+  "surface-accent-yellow-light": "yellow-700",
+  "surface-accent-yellow-base": "yellow-400",
+  "surface-accent-yellow-dark": "yellow-200",
+  "surface-accent-yellow-darker": "yellow-100",
+  "surface-accent-yellow-on-light": "yellow-300",
+  "surface-accent-yellow-on-dark": "yellow-800",
+
+  "surface-accent-violet-lighter": "violet-900",
+  "surface-accent-violet-light": "violet-700",
+  "surface-accent-violet-base": "violet-400",
+  "surface-accent-violet-dark": "violet-200",
+  "surface-accent-violet-darker": "violet-100",
+  "surface-accent-violet-on-light": "violet-300",
+  "surface-accent-violet-on-dark": "violet-800",
+
+  // Elevation
+  "surface-elevation-default": var(--surface-root-light),
+  "surface-elevation-subtle-x": 0,
+  "surface-elevation-subtle-y": 1,
+  "surface-elevation-subtle-blur": 2,
+  "surface-elevation-subtle-spread": 0,
+  "surface-elevation-subtle-shadow-color": var(--surface-root-light),
+  "surface-elevation-subtle-background-subtle": var(--surface-neutral-lighter),
+
+  "surface-elevation-moderate-x": 0,
+  "surface-elevation-moderate-y": 4,
+  "surface-elevation-moderate-blur": 8,
+  "surface-elevation-moderate-spread": 0,
+  "surface-elevation-moderate-shadow-color": var(--surface-root-light),
+  "surface-elevation-moderate-background-moderate": var(--surface-primary-interactive-lighter),
+
+  "surface-elevation-intense-x": 0,
+  "surface-elevation-intense-y": 8,
+  "surface-elevation-intense-blur": 12,
+  "surface-elevation-intense-spread": 0,
+  "surface-elevation-intense-shadow-color": var(--surface-root-light),
+  "surface-elevation-intense-background-intense": var(--surface-static-neutral),
+
+  // Opacity
+  "surface-opacity-lightest": "basic-white",
+  "surface-opacity-lighter": "basic-white",
+  "surface-opacity-light": "basic-white",
+  "surface-opacity-base": "basic-white",
+  "surface-opacity-dark": "basic-white",
+  "surface-opacity-darkest": "basic-white",
+
+  // Gradients
+  "gradients-brand-0": var(--surface-primary-light),
+  "gradients-brand-100": "blue-600",
+  "gradients-neutral-0": var(--surface-primary-interactive-lighter),
+  "gradients-neutral-100": var(--surface-static-neutral),
+  "gradients-blue-abyss-0": #0A0F1C,
+  "gradients-blue-abyss-100": #10183A,
+  "gradients-prism-wave-0--100": var(--surface-slate-light),
+  "gradients-prism-wave-20--80": var(--surface-error-light),
+  "gradients-prism-wave-50": var(--surface-primary-base),
+  "gradients-ai-default-0": var(--gradients-brand-100),
+  "gradients-ai-default-100": var(--surface-primary-on-light),
+  "gradients-ai-hover-0": var(--surface-primary-light),
+  "gradients-ai-hover-100": var(--surface-primary-base),
+  "gradients-ai-pressed-0": var(--gradients-brand-100),
+  "gradients-ai-pressed-100": var(--surface-primary-on-light),
+  "gradients-ai-disabled-0": var(--surface-neutral-lighter),
+  "gradients-ai-disabled-100": var(--surface-static-neutral),
+  "gradients-icon-0": var(--brand-logo-tertiary),
+  "gradients-icon-100": #010003
+);
+
+$light-theme-custom-tokens: (
+  "surface-elevation-subtle-x": 0,
+  "surface-elevation-subtle-y": 1,
+  "surface-elevation-subtle-blur": 2,
+  "surface-elevation-subtle-spread": 0,
+  "surface-elevation-moderate-x": 0,
+  "surface-elevation-moderate-y": 4,
+  "surface-elevation-moderate-blur": 8,
+  "surface-elevation-moderate-spread": 0,
+  "surface-elevation-intense-x": 0,
+  "surface-elevation-intense-y": 12,
+  "surface-elevation-intense-blur": 16,
+  "surface-elevation-intense-spread": 0,
+  "gradients-blue-abyss-0": #090C34,
+  "gradients-blue-abyss-100": #0F3167
+);
+
+@mixin render-dark-theme($map) {
+  @each $key, $value in $map {
+    @if type-of($value) == "string" and not str-index($value, "var(") and not str-index($value, "#") {
+      --#{$key}: var(--global-colors-#{$value});
+    } @else {
+      --#{$key}: #{$value};
+    }
+  }
+}
+
+@mixin render-light-theme($map) {
+  @each $key, $value in $map {
+    --#{$key}: var(--#{$key});
+  }
+  @each $key, $value in $light-theme-custom-tokens {
+    --#{$key}: #{$value};
+  }
+}
+
+:root {
+  @include render-light-theme($dark-theme-tokens);
+}
+
+[data-theme="dark"],
+.dark-theme {
+  @include render-dark-theme($dark-theme-tokens);
+}
+
+// Example usage in a component SCSS file:
+// .button {
+//   background: var(--surface-primary-base);
+//   color: var(--surface-primary-on-light);
+//   border-radius: var(--layout-radius-md);
+//   padding: var(--layout-spacing-sm) var(--layout-spacing-md);
+// }
+
