@@ -3,9 +3,9 @@ $secondary: #6366f1;
 $danger: #ef4444;
 $text: #0f172a;
 $muted: #6b7280;
-$white: #ffffff;
 $surface: #f8fafc;
-$bg: #ffffff;
+$bg: #f1f5f9;
+$white: #ffffff;
 
 $theme-colors: (
   "primary": $primary,
@@ -13,9 +13,9 @@ $theme-colors: (
   "danger": $danger,
   "text": $text,
   "muted": $muted,
-  "white": $white,
   "surface": $surface,
-  "bg": $bg
+  "bg": $bg,
+  "white": $white
 );
 
 $radius: (

@@ -19,15 +19,15 @@
 
 .btn-large {
     height: var(--button-size-large-height);
-    padding: 0 var(--button-size-large-padding-x);
-    border-radius: var(--button-size-large-radius);
+    padding: 0 var(--space-48);
+    border-radius: var(--radius-md);
 }
 
 .btn-primary {
-    background: var(--button-primary-background-color-pressed);
+    background: var(--button-primary-background-color-default);
     color: var(--white);
 }
 
 .btn-primary:hover {
-    background-color: color-mix(in srgb, var(--button-primary-background-color-pressed), black 10%);
+    background-color: color-mix(in srgb, var(--button-primary-background-color-default), black 10%);
 }

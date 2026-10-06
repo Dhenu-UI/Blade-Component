@@ -3,15 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "tokens:build": "ts-node src/tokens/figmaSyncTokens.ts",
     "generate-tokens": "npx tsx src/tokens/figmaSyncTokens.ts",
-  "dev": "npm run generate-tokens && vite",
+    "dev": "npm run generate-tokens && vite",
     "build": "npm run generate-tokens && tsc && vite build",
     "sync-tokens": "npx tsx src/tokens/figmaSyncTokens.ts",
     "preview": "vite preview",
     "mcp:watch": "node .mcp/watch.js",
     "dev:mcp": "concurrently \"npm run dev\" \"npm run mcp:watch\"",
     "mcp:start": "echo \"Start your MCP server here (see .mcp/config.json)\"",
-    "build:tokens": "ts-node src/tokens/figmaSyncTokens.ts"
+    "build:tokens": "style-dictionary build"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -27,7 +28,8 @@
     "sass-embedded": "^1.105.1",
     "ts-node": "^10.9.2",
     "tsx": "^4.23.15",
-    "typescript": "^5.1.6",
-    "vite": "^5.0.0"
+    "typescript": "^5.9.3",
+    "vite": "^5.0.0",
+    "yn": "^5.1.0"
   }
 }
