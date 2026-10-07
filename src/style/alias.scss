@@ -201,7 +201,7 @@ $light-theme-custom-tokens: (
 
 @mixin render-dark-theme($map) {
   @each $key, $value in $map {
-    @if type-of($value) == "string" and not str-index($value, "var(") and not str-index($value, "#") {
+    @if meta.type-of($value) == "string" and not string.index($value, "var(") and not string.index($value, "#") {
       --#{$key}: var(--global-colors-#{$value});
     } @else {
       --#{$key}: #{$value};

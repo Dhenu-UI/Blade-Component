@@ -1,4 +1,5 @@
 @use 'sass:map';
+@use 'sass:meta';
 
 $color-palette: (
   // Basics
@@ -41,7 +42,7 @@ $alpha-shades: (50, 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000);
 :root {
   // Render Colors
   @each $key, $value in $color-palette {
-    @if type-of($value) == "map" {
+    @if meta.type-of($value) == "map" {
       @each $shade, $hex in $value {
         --global-colors-#{$key}-#{$shade}: #{$hex};
       }
