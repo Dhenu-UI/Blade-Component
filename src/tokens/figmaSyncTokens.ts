@@ -99,7 +99,7 @@ function extractTokens(obj: any, prefix = '', seenValues = new Map<string, strin
 
 function processAllTokens() {
   if (!fs.existsSync(jsonDir)) {
-    console.error(`❌ JSON folder nathi malyu: ${jsonDir}`);
+    console.log(`ℹ️ No Figma JSON folder found at ${jsonDir}. Skipping token generation.`);
     return;
   }
 

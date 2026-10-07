@@ -1,13 +1,8 @@
 @use 'sass:string';
 @use './primitives' as *;
 
-// ==========================================
-// SEMANTIC TOKENS MAP
-// ==========================================
 $semantic-tokens: (
-  // ----------------------------------------
-  // Page & Text Tokens
-  // ----------------------------------------
+
   "page-subtle": var(--global-colors-basic-white),
   "page-moderate": var(--global-colors-grey-50),
 
@@ -23,9 +18,6 @@ $semantic-tokens: (
   "text-primary-strong": var(--global-colors-blue-600),
   "text-primary-disabled": var(--global-colors-blue-200),
 
-  // ----------------------------------------
-  // Cards Tokens
-  // ----------------------------------------
   "cards-neutral-subtle": var(--page-subtle),
   "cards-neutral-moderate": var(--page-moderate),
   "cards-neutral-strong": var(--text-disabled),
@@ -33,9 +25,6 @@ $semantic-tokens: (
   "cards-primary-subtle": var(--global-colors-blue-50),
   "cards-primary-moderate": var(--text-primary-disabled),
 
-  // ----------------------------------------
-  // Feedback Background Colors
-  // ----------------------------------------
   "feedback-background-color-primary-subtle": var(--cards-primary-subtle),
   "feedback-background-color-primary-moderate": var(--text-primary-moderate),
   "feedback-background-color-neutral-subtle": var(--page-moderate),
@@ -57,9 +46,6 @@ $semantic-tokens: (
   "feedback-background-color-yellow-subtle": var(--global-colors-yellow-50),
   "feedback-background-color-yellow-moderate": var(--global-colors-yellow-500),
 
-  // ----------------------------------------
-  // Feedback Border Colors
-  // ----------------------------------------
   "feedback-border-color-primary-subtle": var(--border-primary-disabled),
   "feedback-border-color-primary-moderate": var(--text-primary-strong),
   "feedback-border-color-neutral-subtle": var(--text-disabled),
@@ -82,9 +68,6 @@ $semantic-tokens: (
   "feedback-border-color-yellow-moderate": var(--global-colors-yellow-700),
   "feedback-border-color-static-subtle": var(--page-subtle),
 
-  // ----------------------------------------
-  // Feedback Icon Colors
-  // ----------------------------------------
   "feedback-icon-color-primary-subtle": var(--text-primary-moderate),
   "feedback-icon-color-neutral-subtle": var(--feedback-background-color-neutral-default),
   "feedback-icon-color-info-subtle": var(--feedback-border-color-info-moderate),
@@ -98,9 +81,6 @@ $semantic-tokens: (
   "feedback-icon-color-static-subtle": var(--page-subtle),
   "feedback-icon-color-static-moderate": var(--feedback-background-color-neutral-default),
 
-  // ----------------------------------------
-  // Feedback Text Colors
-  // ----------------------------------------
   "feedback-text-color-primary-subtle": var(--text-primary-disabled),
   "feedback-text-color-primary-moderate": var(--text-primary-moderate),
   "feedback-text-color-neutral-subtle": var(--feedback-background-color-neutral-default),
@@ -115,9 +95,6 @@ $semantic-tokens: (
   "feedback-text-color-static-subtle": var(--page-subtle),
   "feedback-text-color-static-strong": var(--feedback-background-color-neutral-default),
 
-  // ----------------------------------------
-  // Standard Icon Tokens
-  // ----------------------------------------
   "icon-subtle": var(--text-subtle),
   "icon-moderate": var(--text-moderate),
   "icon-default": var(--text-strong),
@@ -161,9 +138,6 @@ $semantic-tokens: (
   "icon-violet-default": var(--feedback-background-color-violet-moderate),
   "icon-violet-strong": var(--global-colors-violet-800),
 
-  // ----------------------------------------
-  // Border Tokens
-  // ----------------------------------------
   "border-default": var(--text-disabled),
   "border-strong": var(--text-subtle),
   "border-inverse": var(--page-subtle),
@@ -177,9 +151,6 @@ $semantic-tokens: (
   "border-primary-strong": var(--text-primary-strong),
   "border-primary-disabled": var(--text-primary-disabled),
 
-  // ----------------------------------------
-  // Visual Icons, Illustrations & Logos
-  // ----------------------------------------
   "visual-icon-xs": 8,
   "visual-icon-sm": 12,
   "visual-icon-md": 16,
@@ -215,9 +186,6 @@ $semantic-tokens: (
   "visual-logo-3xl": 40,
   "visual-logo-4xl": 48,
 
-  // ----------------------------------------
-  // Controls (Checkbox, Radio, Toggle)
-  // ----------------------------------------
   "control-checkbox-size-number": 0px,
   "control-checkbox-size-small-height": 16px,
   "control-checkbox-size-small-padding": 2px,
@@ -269,9 +237,6 @@ $semantic-tokens: (
   "control-icon-color-disabled": var(--page-subtle),
   "control-icon-color-focus": var(--page-subtle),
 
-  // ----------------------------------------
-  // Forms (Input, TextArea, MPIN)
-  // ----------------------------------------
   "forms-text-input-size-small-height": var(--global-scale-650),
   "forms-text-input-size-small-padding": var(--global-scale-200),
   "forms-text-input-size-small-icon-size": var(--global-scale-250),
@@ -334,9 +299,6 @@ $semantic-tokens: (
   "forms-icon-color-disabled": var(--icon-disabled),
   "forms-icon-color-disabled-brand": var(--global-colors-slate-500),
 
-  // ----------------------------------------
-  // Buttons
-  // ----------------------------------------
   "button-focus-border-width": 2px,
   "button-focus-white": var(--border-static),
   "button-size-border-width": 1px,
@@ -435,9 +397,6 @@ $semantic-tokens: (
   "button-white-link-foreground-color-pressed": var(--page-subtle),
   "button-white-link-foreground-color-disabled": var(--page-subtle),
 
-  // ----------------------------------------
-  // Chips
-  // ----------------------------------------
   "chips-size-border-width": 1px,
 
   "chips-size-small-height": var(--global-scale-250),
@@ -486,9 +445,6 @@ $semantic-tokens: (
   "chips-outline-foreground-color-hover": var(--text-primary-disabled),
   "chips-outline-foreground-color-disabled": var(--text-primary-disabled),
 
-  // ----------------------------------------
-  // Badges
-  // ----------------------------------------
   "badge-size-small-height": var(--global-scale-300),
   "badge-size-small-gap": var(--global-scale-50),
   "badge-size-small-horizontal-padding": var(--global-scale-100),
@@ -510,9 +466,6 @@ $semantic-tokens: (
   "badge-type-primary": var(--page-subtle),
   "badge-type-neutral": var(--page-subtle),
 
-  // ----------------------------------------
-  // Layout & Overlays (Separator, BottomSheet, Popover, Tabs)
-  // ----------------------------------------
   "seperator-default": var(--text-disabled),
   "seperator-subtle": var(--text-subtle),
   "seperator-strong": var(--text-strong),
@@ -533,9 +486,6 @@ $semantic-tokens: (
   "tabs-focus-ring": var(--page-subtle),
   "tabs-active-indicator": var(--text-primary-moderate),
 
-  // ----------------------------------------
-  // Pagination
-  // ----------------------------------------
   "pagination-horizontal-padding": var(--global-scale-50),
   "pagination-horizontal-gap": var(--global-scale-50),
   "pagination-horizontal-gap-2": var(--global-scale-150),
@@ -554,9 +504,6 @@ $semantic-tokens: (
   "pagination-base-deselected-hover": var(--cards-primary-subtle),
   "pagination-base-deselected-pressed": var(--button-secondary-background-color-pressed),
 
-  // ----------------------------------------
-  // Components (Progress Bar, Avatar, Toast, Ratings, Snackbar)
-  // ----------------------------------------
   "progress-bar-radius": 1440px,
   "progress-bar-linear-height": var(--global-scale-100),
   "progress-bar-circular-small-height": var(--global-scale-500),
@@ -588,9 +535,6 @@ $semantic-tokens: (
   "snackbar-size-radius": var(--global-scale-100)
 );
 
-// ==========================================
-// RENDER MIXIN & CSS OUTPUT
-// ==========================================
 @mixin render-vars($map, $prefix: '') {
   @each $key, $value in $map {
     --#{$prefix}#{$key}: #{$value};

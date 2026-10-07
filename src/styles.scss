@@ -1,5 +1,8 @@
-@use './style/variables';
-@use './style/mixins';
-@use './style/root';
+@use './style/alias';
 @use './style/global';
-@use './style/figma/figma';
+@use './style/layout';
+@use './style/mixins';
+@use './style/primitives';
+@use './style/root';
+@use './style/semantics';
+@use './style/variables';
