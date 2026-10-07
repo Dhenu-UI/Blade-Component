@@ -1,4 +1,5 @@
 @use 'sass:string';
+@use 'sass:meta';
 @use './primitives' as *;
 
 $dark-theme-tokens: (
@@ -201,7 +202,7 @@ $light-theme-custom-tokens: (
 
 @mixin render-dark-theme($map) {
   @each $key, $value in $map {
-    @if meta.type-of($value) == "string" and not string.index($value, "var(") and not string.index($value, "#") {
+    @if meta.type-of($value) == "string" and string.index($value, "var(") == null and string.index($value, "#") == null {
       --#{$key}: var(--global-colors-#{$value});
     } @else {
       --#{$key}: #{$value};
